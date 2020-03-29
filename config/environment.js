@@ -30,6 +30,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.API_URL = "http://localhost:4567/";
+    ENV.WS_URL = "ws://localhost:4567/";
   }
 
   if (environment === "test") {
@@ -47,6 +48,7 @@ module.exports = function(environment) {
   if (environment === "production") {
     // here you can enable a production-specific feature
     ENV.API_URL = "https://lor-deck-ban-server.herokuapp.com/";
+    ENV.WS_URL = "wss://lor-deck-ban-server.herokuapp.com/";
   }
 
   return ENV;

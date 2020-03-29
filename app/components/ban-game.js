@@ -52,9 +52,7 @@ export default class BanGame extends Component {
   constructor(_, { roomName }) {
     super(...arguments);
     this.roomName = roomName;
-    const socket = this.websockets.socketFor(
-      `ws://${config.API_URL}/${roomName}`
-    );
+    const socket = this.websockets.socketFor(`${config.WS_URL}/${roomName}`);
 
     socket.on("open", this.onOpen, this);
     socket.on("message", this.onMessage, this);
