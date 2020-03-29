@@ -2,6 +2,8 @@ import Component from "@glimmer/component";
 import { action } from "@ember/object";
 import { inject } from "@ember/service";
 import { tracked } from "@glimmer/tracking";
+import config from "../config/environment";
+
 /*
 // # NEW_LOBBY
 // # LOBBY_FOUND
@@ -50,7 +52,7 @@ export default class BanGame extends Component {
   constructor(_, { roomName }) {
     super(...arguments);
     this.roomName = roomName;
-    const socket = this.websockets.socketFor(`ws://localhost:4567/${roomName}`);
+    const socket = this.websockets.socketFor(`ws://`${config.API_URL}`/${roomName}`);
 
     socket.on("open", this.onOpen, this);
     socket.on("message", this.onMessage, this);
