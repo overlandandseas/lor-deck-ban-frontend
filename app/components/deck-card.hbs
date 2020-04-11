@@ -1,25 +1,8 @@
-<div>
-Dis a deck
-</div>
-<div class="pa2 mr2 mv2 shadow-hover fj-io">
+<div class="pa2 mr2 mv2 shadow-hover">
   <h5 class="code f5 tc">{{@deckCode}}</h5>
   <ul class="list pl0 measure center">
     {{#each this.cards as |card|}}
-      <li>her there</li>
-      {{/each}}
-    <!-- <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30 b">(3) Zed x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(1) Omen Hawk x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(1) Navori Bladescout x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(2) Greenglade Duo x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(2) Navori Conspirator x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(3) Shadow Assassin x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(4) Kinkou Lifeblade x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(4) Kinkou Wayfinder x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(5) Jeweled Protector x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(7) Windfarer Hatchling x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(1) Elixir of Iron x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(3) Twin Disciplines x3</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(4) Will of Ionia x2</li>
-    <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">(4) Deny x2</li> -->
+      <li class="pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">({{card.count}}) {{card.name}}</li>
+    {{/each}}
   </ul>
 </div>

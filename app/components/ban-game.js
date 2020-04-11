@@ -3,7 +3,7 @@ import { action } from "@ember/object";
 import { inject } from "@ember/service";
 import { tracked } from "@glimmer/tracking";
 import config from "../config/environment";
-import runeterra from "runeterra";
+import { DeckEncoder } from "runeterra";
 
 /*
 // # NEW_LOBBY
@@ -23,6 +23,18 @@ import runeterra from "runeterra";
 //
 // # HOST:BAN:0 GUEST:BAN:1
 */
+
+function checkValidity(decks) {
+  console.dir(decks);
+  let isValid = false;
+  try {
+    isValid =  decks.every(deck => DeckEncoder.isValidDeck(DeckEncoder.dencode(deck)))
+  } catch (_) {
+    console.log('invalid deck');
+  }
+  return isValid;
+}
+
 export default class BanGame extends Component {
   @inject websockets;
 
@@ -51,6 +63,8 @@ export default class BanGame extends Component {
   @tracked opponentBannedDeck = null;
   @tracked opponentBannedDeckIdx = null;
 
+  @tracked validDecks = false;
+
   constructor(_, { roomName }) {
     super(...arguments);
     this.roomName = roomName;
@@ -77,12 +91,20 @@ export default class BanGame extends Component {
     console.log(`On open event has been called: ${event}`);
   }
 
+  ping() {
+    this.send("PING");
+    console.log("PING");
+    setTimeout(this.ping.bind(this), 5000);
+  }
+
   onMessage({ data }) {
     if (data === "NEW_LOBBY") {
       this.openLobby();
+      this.timeout = this.ping();
     }
     if (data === "LOBBY_FOUND") {
       this.lobbyFound();
+      this.timeout = this.ping()
     }
     if (data === "2_CONNECTED") {
       this.otherPlayerConnected = true;
@@ -104,6 +126,8 @@ export default class BanGame extends Component {
       this.deckSelectionPhase = false;
       if (splitData[1] !== this.role) {
         this.opponentDeckList = splitData[2].split("|").map(decodeURIComponent);
+        this.validDecks = checkValidity(this.opponentDeckList)
+        clearTimeout(this.timeout);
       }
     }
 
