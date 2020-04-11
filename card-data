@@ -1,0 +1,326 @@
+01DE001 Vanguard Bannerman	Unit	Elite	Demacia region Demacia	4	3	3	Rare rarity Rare
+01DE002	Tianna Crownguard	Unit		Demacia region Demacia	8	7	7	Epic rarity Epic
+01DE003	Laurent Bladekeeper	Unit		Demacia region Demacia	4	2	3	Rare rarity Rare
+01DE004	Silverwing Vanguard	Unit	Elite	Demacia region Demacia	4	2	1	Common rarity Common
+01DE006	Vanguard Sergeant	Unit	Elite	Demacia region Demacia	3	3	3	Rare rarity Rare
+01DE007	Judgment	Spell		Demacia region Demacia	8	0	0	Epic rarity Epic
+01DE009	Brightsteel Protector	Unit		Demacia region Demacia	2	3	2	Common rarity Common
+01DE010	Swiftwing Lancer	Unit		Demacia region Demacia	5	5	4	Rare rarity Rare
+01DE011	Laurent Protege	Unit		Demacia region Demacia	3	2	4	Common rarity Common
+01DE012	Garen	Unit	Elite	Demacia region Demacia	5	5	5	Champion rarity Champion
+01DE013	Chain Vest	Spell		Demacia region Demacia	1	0	0	Common rarity Common
+01DE014	Reinforcements	Spell		Demacia region Demacia	8	0	0	Rare rarity Rare
+01DE015	Radiant Guardian	Unit		Demacia region Demacia	5	5	5	Rare rarity Rare
+01DE016	Dauntless Vanguard	Unit	Elite	Demacia region Demacia	3	3	3
+01DE017	Stand Alone	Spell		Demacia region Demacia	3	0	0	Rare rarity Rare
+01DE018	Radiant Strike	Spell		Demacia region Demacia	1	0	0	Common rarity Common
+01DE019	Mobilize	Spell		Demacia region Demacia	3	0	0	Rare rarity Rare
+01DE020	Vanguard Defender	Unit	Elite	Demacia region Demacia	2	2	2	Common rarity Common
+01DE021	Relentless Pursuit	Spell		Demacia region Demacia	3	0	0	Common rarity Common
+01DE022	Lucian	Unit		Demacia region Demacia	2	3	2	Champion rarity Champion
+01DE023	Mageseeker Investigator	Unit		Demacia region Demacia	3	3	3	Common rarity Common
+01DE024	Mageseeker Conservator	Unit		Demacia region Demacia	1	1	1	Common rarity Common
+01DE025	Detain	Spell		Demacia region Demacia	5	0	0	Common rarity Common
+01DE026	Single Combat	Spell		Demacia region Demacia	2	0	0	Common rarity Common
+01DE027	En Garde	Spell		Demacia region Demacia	3	0	0	Rare rarity Rare
+01DE028	Vanguard Cavalry	Unit	Elite	Demacia region Demacia	5	5	5	Common rarity Common
+01DE029	Fleetfeather Tracker	Unit		Demacia region Demacia	1	2	1	Common rarity Common
+01DE030	Silverwing Scout	Unit		Demacia region Demacia	4	2	3	Common rarity Common
+01DE031	Dawnspeakers	Unit		Demacia region Demacia	3	1	4	Epic rarity Epic
+01DE032	Prismatic Barrier	Spell		Demacia region Demacia	3	0	0	Common rarity Common
+01DE033	Remembrance	Spell		Demacia region Demacia	6	0	0	Rare rarity Rare
+01DE034	Battlesmith	Unit		Demacia region Demacia	2	2	2	Rare rarity Rare
+01DE035	For Demacia!	Spell		Demacia region Demacia	6	0	0	Rare rarity Rare
+01DE036	Vanguard Squire	Unit	Elite	Demacia region Demacia	4	3	3	Common rarity Common
+01DE037	Riposte	Spell		Demacia region Demacia	4	0	0	Rare rarity Rare
+01DE038	Senna, Sentinel of Light	Unit		Demacia region Demacia	3	4	2	Rare rarity Rare
+01DE039	Cithria of Cloudfield	Unit	Elite	Demacia region Demacia	1	2	2	Common rarity Common
+01DE040	Mageseeker Persuader	Unit		Demacia region Demacia	2	3	2	Rare rarity Rare
+01DE041	Back to Back	Spell		Demacia region Demacia	6	0	0	Rare rarity Rare
+01DE042	Lux	Unit		Demacia region Demacia	6	4	5	Champion rarity Champion
+01DE043	War Chefs	Unit		Demacia region Demacia	2	2	3	Common rarity Common
+01DE044	Redoubled Valor	Spell		Demacia region Demacia	6	0	0	Rare rarity Rare
+01DE045	Fiora	Unit		Demacia region Demacia	3	3	3	Champion rarity Champion
+01DE046	Vanguard Lookout	Unit	Elite	Demacia region Demacia	2	1	4	Common rarity Common
+01DE047	Succession	Spell		Demacia region Demacia	3	0	0	Common rarity Common
+01DE048	Mageseeker Inciter	Unit		Demacia region Demacia	4	4	3	Rare rarity Rare
+01DE049	Plucky Poro	Unit	Poro	Demacia region Demacia	1	1	1	Common rarity Common
+01DE050	Purify	Spell		Demacia region Demacia	2	0	0	Common rarity Common
+01DE051	Cithria the Bold	Unit	Elite	Demacia region Demacia	6	6	6	Epic rarity Epic
+01DE052	Brightsteel Formation	Unit		Demacia region Demacia	9	9	9	Epic rarity Epic
+01DE053	Laurent Chevalier	Unit		Demacia region Demacia	4	3	1	Epic rarity Epic
+01DE054	Vanguard Redeemer	Unit	Elite	Demacia region Demacia	3	3	3	Common rarity Common
+01DE055	Laurent Duelist	Unit		Demacia region Demacia	3	3	2	Common rarity Common
+01DE056	Vanguard Firstblade	Unit	Elite	Demacia region Demacia	4	2	2	Common rarity Common
+01FR001	Flash Freeze	Spell		Freljord region Freljord	3	0	0	Rare rarity Rare
+01FR003	Avarosan Sentry	Unit		Freljord region Freljord	2	2	1	Common rarity Common
+01FR004	Elixir of Iron	Spell		Freljord region Freljord	1	0	0	Common rarity Common
+01FR005	Battle Fury	Spell		Freljord region Freljord	8	0	0	Rare rarity Rare
+01FR006	Iceborn Legacy	Spell		Freljord region Freljord	5	0	0	Common rarity Common
+01FR007	Babbling Bjerg	Unit		Freljord region Freljord	4	3	3	Common rarity Common
+01FR008	Lonely Poro	Unit	Poro	Freljord region Freljord	1	1	1	Common rarity Common
+01FR009	Braum	Unit		Freljord region Freljord	3	0	5	Champion rarity Champion
+01FR010	Bloodsworn Pledge	Spell		Freljord region Freljord	4	0	0	Rare rarity Rare
+01FR011	Icevale Archer	Unit		Freljord region Freljord	2	3	1	Common rarity Common
+01FR012	Catalyst of Aeons	Spell		Freljord region Freljord	5	0	0	Common rarity Common
+01FR013	Scarmother Vrynna	Unit		Freljord region Freljord	6	3	8	Epic rarity Epic
+01FR014	Yeti Yearling	Unit	Yeti	Freljord region Freljord	1	1	2	Common rarity Common
+01FR016	Poro Snax	Spell		Freljord region Freljord	3	0	0	Common rarity Common
+01FR017	Troop of Elnuks	Unit	Elnuk	Freljord region Freljord	5	3	3	Common rarity Common
+01FR018	Rimefang Wolf	Unit		Freljord region Freljord	3	3	2	Rare rarity Rare
+01FR019	Winter's Breath	Spell		Freljord region Freljord	7	0	0	Epic rarity Epic
+01FR020	Avalanche	Spell		Freljord region Freljord	4	0	0	Rare rarity Rare
+01FR021	Tarkaz the Tribeless	Unit		Freljord region Freljord	5	5	8	Epic rarity Epic
+01FR022	Omen Hawk	Unit		Freljord region Freljord	1	1	1	Common rarity Common
+01FR023	Warmother's Call	Spell		Freljord region Freljord	12	0	0	Epic rarity Epic
+01FR024	Anivia	Unit		Freljord region Freljord	7	2	4	Champion rarity Champion
+01FR025	Poro Herder	Unit		Freljord region Freljord	4	3	4	Rare rarity Rare
+01FR026	Alpha Wildclaw	Unit		Freljord region Freljord	6	7	6	Common rarity Common
+01FR027	Bull Elnuk	Unit	Elnuk	Freljord region Freljord	4	4	5	Common rarity Common
+01FR028	Enraged Yeti	Unit	Yeti	Freljord region Freljord	1	5	5
+01FR029	Entreat	Spell		Freljord region Freljord	2	0	0	Rare rarity Rare
+01FR030	Brittle Steel	Spell		Freljord region Freljord	1	0	0	Common rarity Common
+01FR031	Ancient Yeti	Unit	Yeti	Freljord region Freljord	7	5	5	Rare rarity Rare
+01FR032	Starlit Seer	Unit		Freljord region Freljord	2	2	2	Rare rarity Rare
+01FR033	Wyrding Stones	Unit		Freljord region Freljord	3	0	3	Common rarity Common
+01FR034	They Who Endure	Unit		Freljord region Freljord	6	1	1	Rare rarity Rare
+01FR035	Unscarred Reaver	Unit		Freljord region Freljord	1	0	3	Common rarity Common
+01FR036	Avarosan Marksman	Unit		Freljord region Freljord	3	3	1	Common rarity Common
+01FR037	Avarosan Outriders	Unit		Freljord region Freljord	4	3	3	Rare rarity Rare
+01FR038	Ashe	Unit		Freljord region Freljord	4	5	3	Champion rarity Champion
+01FR039	Tryndamere	Unit		Freljord region Freljord	8	8	4	Champion rarity Champion
+01FR040	Rimetusk Shaman	Unit		Freljord region Freljord	5	3	3	Rare rarity Rare
+01FR041	Avarosan Hearthguard	Unit		Freljord region Freljord	5	5	5	Epic rarity Epic
+01FR042	Harsh Winds	Spell		Freljord region Freljord	6	0	0	Rare rarity Rare
+01FR043	Heart of the Fluft	Unit	Poro	Freljord region Freljord	6	4	4	Rare rarity Rare
+01FR045	Scarthane Steffen	Unit		Freljord region Freljord	3	2	4	Common rarity Common
+01FR046	Take Heart	Spell		Freljord region Freljord	3	0	0	Rare rarity Rare
+01FR047	Feral Mystic	Unit		Freljord region Freljord	2	2	2	Common rarity Common
+01FR048	Avarosan Trapper	Unit		Freljord region Freljord	3	2	2	Common rarity Common
+01FR049	Stalking Wolf	Unit		Freljord region Freljord	2	3	2	Common rarity Common
+01FR050	Kindly Tavernkeeper	Unit		Freljord region Freljord	3	2	3	Common rarity Common
+01FR051	Tall Tales	Spell		Freljord region Freljord	3	0	0	Common rarity Common
+01FR052	She Who Wanders	Unit		Freljord region Freljord	10	10	10	Epic rarity Epic
+01FR053	Mighty Poro	Unit	Poro	Freljord region Freljord	3	3	3	Common rarity Common
+01FR054	Scarmaiden Reaver	Unit		Freljord region Freljord	5	4	5	Rare rarity Rare
+01FR055	Shatter	Spell		Freljord region Freljord	2	0	0	Common rarity Common
+01FR056	Icy Yeti	Unit	Yeti	Freljord region Freljord	7	5	5	Rare rarity Rare
+01FR057	Pack Mentality	Spell		Freljord region Freljord	7	0	0	Rare rarity Rare
+01IO001	Ritual of Renewal	Spell		Ionia region Ionia	7	0	0	Rare rarity Rare
+01IO002	Will of Ionia	Spell		Ionia region Ionia	4	0	0	Common rarity Common
+01IO003	Death Mark	Spell		Ionia region Ionia	3	0	0	Rare rarity Rare
+01IO004	Health Potion	Spell		Ionia region Ionia	1	0	0	Common rarity Common
+01IO005	Nimble Poro	Unit	Poro	Ionia region Ionia	1	1	1	Common rarity Common
+01IO006	Greenglade Duo	Unit		Ionia region Ionia	2	2	1	Rare rarity Rare
+01IO007	Ren Shadowblade	Unit		Ionia region Ionia	8	6	4	Epic rarity Epic
+01IO008	Fae Bladetwirler	Unit		Ionia region Ionia	2	1	3	Rare rarity Rare
+01IO009	Zed	Unit		Ionia region Ionia	3	3	2	Champion rarity Champion
+01IO010	Stand United	Spell		Ionia region Ionia	6	0	0	Rare rarity Rare
+01IO011	Recall	Spell		Ionia region Ionia	1	0	0	Common rarity Common
+01IO012	Twin Disciplines	Spell		Ionia region Ionia	3	0	0	Common rarity Common
+01IO013	Shadow Fiend	Unit		Ionia region Ionia	1	4	3	Common rarity Common
+01IO014	Greenglade Elder	Unit		Ionia region Ionia	3	1	1	Common rarity Common
+01IO015	Yasuo	Unit		Ionia region Ionia	4	4	3	Champion rarity Champion
+01IO016	Zephyr Sage	Unit		Ionia region Ionia	6	4	4	Rare rarity Rare
+01IO017	Navori Bladescout	Unit		Ionia region Ionia	1	2	1	Common rarity Common
+01IO018	Rush	Spell		Ionia region Ionia	1	0	0	Common rarity Common
+01IO019	Greenglade Caretaker	Unit		Ionia region Ionia	1	1	2	Common rarity Common
+01IO020	Keeper of Masks	Unit		Ionia region Ionia	2	2	3	Common rarity Common
+01IO021	Windfarer Hatchling	Unit		Ionia region Ionia	7	4	2	Epic rarity Epic
+01IO022	Ghost	Spell		Ionia region Ionia	1	0	0	Common rarity Common
+01IO023	Jeweled Protector	Unit		Ionia region Ionia	5	4	4	Rare rarity Rare
+01IO024	Dawn and Dusk	Spell		Ionia region Ionia	6	0	0	Rare rarity Rare
+01IO026	Inspiring Mentor	Unit		Ionia region Ionia	1	1	2	Common rarity Common
+01IO027	Silent Shadowseer	Unit		Ionia region Ionia	2	3	1	Epic rarity Epic
+01IO028	Scaled Snapper	Unit		Ionia region Ionia	3	2	2	Common rarity Common
+01IO029	Sown Seeds	Spell		Ionia region Ionia	2	0	0	Rare rarity Rare
+01IO030	The Empyrean	Unit		Ionia region Ionia	7	6	5	Epic rarity Epic
+01IO031	Cloud Drinker	Unit		Ionia region Ionia	6	3	5	Rare rarity Rare
+01IO032	Shen	Unit		Ionia region Ionia	4	2	5	Champion rarity Champion
+01IO033	Minah Swiftfoot	Unit		Ionia region Ionia	9	6	5	Epic rarity Epic
+01IO036	Greenglade Lookout	Unit		Ionia region Ionia	2	2	1	Common rarity Common
+01IO037	Spirit's Refuge	Spell		Ionia region Ionia	4	0	0	Common rarity Common
+01IO038	Solitary Monk	Unit		Ionia region Ionia	3	4	3	Rare rarity Rare
+01IO039	Shadowshift	Spell		Ionia region Ionia	3	0	0	Common rarity Common
+01IO040	Kinkou Lifeblade	Unit		Ionia region Ionia	4	2	2	Common rarity Common
+01IO041	Karma	Unit		Ionia region Ionia	5	4	3	Champion rarity Champion
+01IO042	Sparring Student	Unit		Ionia region Ionia	1	1	1	Common rarity Common
+01IO043	Rivershaper	Unit		Ionia region Ionia	3	2	1	Rare rarity Rare
+01IO044	Navori Conspirator	Unit		Ionia region Ionia	2	2	2	Common rarity Common
+01IO045	Herald of Spring	Unit		Ionia region Ionia	2	2	2	Common rarity Common
+01IO046	Steel Tempest	Spell		Ionia region Ionia	3	0	0	Rare rarity Rare
+01IO047	Shadow Flare	Spell		Ionia region Ionia	6	0	0	Epic rarity Epic
+01IO048	Yusari	Unit		Ionia region Ionia	5	4	3	Rare rarity Rare
+01IO049	Deny	Spell		Ionia region Ionia	4	0	0	Rare rarity Rare
+01IO050	Kinkou Wayfinder	Unit		Ionia region Ionia	4	2	3	Rare rarity Rare
+01IO052	Navori Highwayman	Unit		Ionia region Ionia	2	1	2	Common rarity Common
+01IO053	Emerald Awakener	Unit		Ionia region Ionia	3	2	2	Common rarity Common
+01IO054	Insight of Ages	Spell		Ionia region Ionia	2	0	0	Rare rarity Rare
+01IO055	Ki Guardian	Spell		Ionia region Ionia	2	0	0	Common rarity Common
+01IO056	Yone, Windchaser	Unit		Ionia region Ionia	7	6	6	Rare rarity Rare
+01IO057	Shadow Assassin	Unit		Ionia region Ionia	3	2	2	Common rarity Common
+01NX002	Decimate	Spell		Noxus region Noxus	5	0	0	Rare rarity Rare
+01NX003	Arena Bookie	Unit		Noxus region Noxus	3	2	1	Rare rarity Rare
+01NX004	Culling Strike	Spell		Noxus region Noxus	3	0	0	Rare rarity Rare
+01NX005	Crimson Aristocrat	Unit		Noxus region Noxus	2	2	2	Common rarity Common
+01NX006	Vladimir	Unit		Noxus region Noxus	5	5	5	Champion rarity Champion
+01NX007	Arena Battlecaster	Unit		Noxus region Noxus	2	2	2	Rare rarity Rare
+01NX008	Basilisk Rider	Unit		Noxus region Noxus	4	5	2	Rare rarity Rare
+01NX009	Crowd Favorite	Unit		Noxus region Noxus	4	2	1	Rare rarity Rare
+01NX010	Legion General	Unit		Noxus region Noxus	5	4	4	Common rarity Common
+01NX011	Whirling Death	Spell		Noxus region Noxus	3	0	0	Common rarity Common
+01NX012	Legion Rearguard	Unit		Noxus region Noxus	1	3	2	Common rarity Common
+01NX013	Decisive Maneuver	Spell		Noxus region Noxus	5	0	0	Rare rarity Rare
+01NX014	Shiraza the Blade	Unit		Noxus region Noxus	4	3	3	Epic rarity Epic
+01NX015	Precious Pet	Unit	Spider	Noxus region Noxus	1	2	1	Common rarity Common
+01NX016	Trifarian Hopeful	Unit		Noxus region Noxus	2	3	2	Common rarity Common
+01NX017	Legion Drummer	Unit		Noxus region Noxus	2	3	2	Common rarity Common
+01NX019	Might	Spell		Noxus region Noxus	3	0	0	Common rarity Common
+01NX020	Draven	Unit		Noxus region Noxus	3	3	3	Champion rarity Champion
+01NX021	Legion Marauder	Unit		Noxus region Noxus	3	3	2	Common rarity Common
+01NX022	Noxian Guillotine	Spell		Noxus region Noxus	3	0	0	Rare rarity Rare
+01NX023	Arachnoid Host	Unit	Spider	Noxus region Noxus	5	5	3	Rare rarity Rare
+01NX024	Kato The Arm	Unit		Noxus region Noxus	5	5	3	Epic rarity Epic
+01NX025	Brothers' Bond	Spell		Noxus region Noxus	2	0	0	Common rarity Common
+01NX026	Reckless Trifarian	Unit		Noxus region Noxus	3	5	4	Common rarity Common
+01NX027	Elixir of Wrath	Spell		Noxus region Noxus	1	0	0	Common rarity Common
+01NX029	Legion Veteran	Unit		Noxus region Noxus	4	4	5	Epic rarity Epic
+01NX030	Crimson Disciple	Unit		Noxus region Noxus	2	2	3	Rare rarity Rare
+01NX031	Trifarian Gloryseeker	Unit		Noxus region Noxus	2	5	1	Rare rarity Rare
+01NX032	Crimson Awakener	Unit		Noxus region Noxus	4	5	5	Rare rarity Rare
+01NX033	Trifarian Assessor	Unit		Noxus region Noxus	4	4	3	Rare rarity Rare
+01NX034	Affectionate Poro	Unit	Poro	Noxus region Noxus	1	1	1	Common rarity Common
+01NX035	Draven's Biggest Fan	Unit		Noxus region Noxus	1	2	1	Common rarity Common
+01NX036	Minotaur Reckoner	Unit		Noxus region Noxus	6	6	6	Rare rarity Rare
+01NX037	Legion Grenadier	Unit		Noxus region Noxus	2	3	1	Common rarity Common
+01NX038	Darius	Unit		Noxus region Noxus	6	6	5	Champion rarity Champion
+01NX039	Vision	Spell		Noxus region Noxus	3	0	0	Rare rarity Rare
+01NX040	Legion Saboteur	Unit		Noxus region Noxus	1	2	1	Common rarity Common
+01NX041	Trifarian Shieldbreaker	Unit		Noxus region Noxus	5	6	5	Common rarity Common
+01NX042	Katarina	Unit		Noxus region Noxus	3	3	2	Champion rarity Champion
+01NX043	Blade's Edge	Spell		Noxus region Noxus	1	0	0	Common rarity Common
+01NX044	Battering Ram	Unit		Noxus region Noxus	6	0	12	Epic rarity Epic
+01NX045	Savage Reckoner	Unit		Noxus region Noxus	7	7	4	Rare rarity Rare
+01NX046	Arachnoid Sentry	Unit	Spider	Noxus region Noxus	3	3	2	Common rarity Common
+01NX047	Transfusion	Spell		Noxus region Noxus	2	0	0	Common rarity Common
+01NX048	Crimson Curator	Unit		Noxus region Noxus	3	3	3	Common rarity Common
+01NX049	Guile	Spell		Noxus region Noxus	1	0	0	Common rarity Common
+01NX050	Death Lotus	Spell		Noxus region Noxus	2	0	0	Rare rarity Rare
+01NX051	Captain Farron	Unit		Noxus region Noxus	8	8	8	Epic rarity Epic
+01NX052	Blood for Blood	Spell		Noxus region Noxus	3	0	0	Common rarity Common
+01NX053	Reckoning	Spell		Noxus region Noxus	6	0	0	Epic rarity Epic
+01NX054	Intimidating Roar	Spell		Noxus region Noxus	5	0	0	Rare rarity Rare
+01NX055	House Spider	Unit	Spider	Noxus region Noxus	2	2	2	Common rarity Common
+01NX056	Shunpo	Spell		Noxus region Noxus	5	0	0	Common rarity Common
+01PZ001	Rummage	Spell		Unified Piltover region Piltover & Zaun	1	0	0	Common rarity Common
+01PZ002	Back Alley Barkeep	Unit		Unified Piltover region Piltover & Zaun	4	3	2	Common rarity Common
+01PZ003	Assembly Bot	Unit		Unified Piltover region Piltover & Zaun	3	1	1	Rare rarity Rare
+01PZ004	Trueshot Barrage	Spell		Unified Piltover region Piltover & Zaun	7	0	0	Epic rarity Epic
+01PZ005	Hextech Transmogulator	Spell		Unified Piltover region Piltover & Zaun	6	0	0	Rare rarity Rare
+01PZ006	Plaza Guardian	Unit		Unified Piltover region Piltover & Zaun	10	6	6	Rare rarity Rare
+01PZ007	Parade Electrorig	Unit		Unified Piltover region Piltover & Zaun	3	2	4	Common rarity Common
+01PZ008	Teemo	Unit		Unified Piltover region Piltover & Zaun	1	1	1	Champion rarity Champion
+01PZ009	Amateur Aeronaut	Unit		Unified Piltover region Piltover & Zaun	3	2	3	Common rarity Common
+01PZ010	Mushroom Cloud	Spell		Unified Piltover region Piltover & Zaun	1	0	0	Common rarity Common
+01PZ012	Flame Chompers!	Unit		Unified Piltover region Piltover & Zaun	2	0	2	Common rarity Common
+01PZ013	Augmented Experimenter	Unit		Unified Piltover region Piltover & Zaun	6	3	3	Epic rarity Epic
+01PZ014	Unlicensed Innovation	Spell		Unified Piltover region Piltover & Zaun	6	0	0	Common rarity Common
+01PZ015	T-Hex	Unit	Tech	Unified Piltover region Piltover & Zaun	8	8	8
+01PZ016	Flash of Brilliance	Spell		Unified Piltover region Piltover & Zaun	3	0	0	Common rarity Common
+01PZ017	Used Cask Salesman	Unit		Unified Piltover region Piltover & Zaun	3	3	2	Common rarity Common
+01PZ018	Academy Prodigy	Unit		Unified Piltover region Piltover & Zaun	2	3	1	Common rarity Common
+01PZ019	Eager Apprentice	Unit		Unified Piltover region Piltover & Zaun	2	2	1	Common rarity Common
+01PZ020	Daring Poro	Unit	Poro	Unified Piltover region Piltover & Zaun	1	1	1	Common rarity Common
+01PZ021	Midenstokke Henchmen	Unit		Unified Piltover region Piltover & Zaun	5	5	3	Rare rarity Rare
+01PZ022	Poison Puffcap	Trap		Unified Piltover region Piltover & Zaun	0	0	0
+01PZ023	Professor von Yipp	Unit		Unified Piltover region Piltover & Zaun	4	2	3	Rare rarity Rare
+01PZ024	Unstable Voltician	Unit		Unified Piltover region Piltover & Zaun	5	4	4	Rare rarity Rare
+01PZ025	Puffcap Peddler	Unit		Unified Piltover region Piltover & Zaun	3	3	3	Common rarity Common
+01PZ026	Sumpworks Map	Spell		Unified Piltover region Piltover & Zaun	2	0	0	Common rarity Common
+01PZ027	Thermogenic Beam	Spell		Unified Piltover region Piltover & Zaun	0	0	0	Rare rarity Rare
+01PZ028	Jury-Rig	Spell		Unified Piltover region Piltover & Zaun	1	0	0	Common rarity Common
+01PZ029	Eminent Benefactor	Unit		Unified Piltover region Piltover & Zaun	4	3	3	Rare rarity Rare
+01PZ030	Shady Character	Unit		Unified Piltover region Piltover & Zaun	4	1	1	Rare rarity Rare
+01PZ031	Statikk Shock	Spell		Unified Piltover region Piltover & Zaun	4	0	0	Rare rarity Rare
+01PZ032	Scrap Scuttler	Unit		Unified Piltover region Piltover & Zaun	1	1	1
+01PZ033	Purrsuit of Perfection	Spell		Unified Piltover region Piltover & Zaun	5	0	0	Epic rarity Epic
+01PZ034	Sumpsnipe Scavenger	Unit		Unified Piltover region Piltover & Zaun	4	4	3	Rare rarity Rare
+01PZ035	Jae Medarda	Unit		Unified Piltover region Piltover & Zaun	8	6	6	Epic rarity Epic
+01PZ036	Ezreal	Unit		Unified Piltover region Piltover & Zaun	3	1	3	Champion rarity Champion
+01PZ038	Sump Dredger	Unit		Unified Piltover region Piltover & Zaun	2	4	3	Common rarity Common
+01PZ039	Get Excited!	Spell		Unified Piltover region Piltover & Zaun	3	0	0	Rare rarity Rare
+01PZ040	Jinx	Unit		Unified Piltover region Piltover & Zaun	4	4	3	Champion rarity Champion
+01PZ042	Intrepid Mariner	Unit		Unified Piltover region Piltover & Zaun	2	1	3	Rare rarity Rare
+01PZ043	Chempunk Pickpocket	Unit		Unified Piltover region Piltover & Zaun	2	3	2	Rare rarity Rare
+01PZ044	Chempunk Shredder	Unit		Unified Piltover region Piltover & Zaun	5	5	2	Rare rarity Rare
+01PZ045	Zaunite Urchin	Unit		Unified Piltover region Piltover & Zaun	1	2	1	Common rarity Common
+01PZ046	Counterfeit Copies	Spell		Unified Piltover region Piltover & Zaun	1	0	0	Rare rarity Rare
+01PZ047	Caustic Cask	Unit		Unified Piltover region Piltover & Zaun	0	0	1	Common rarity Common
+01PZ048	Corina Veraza	Unit		Unified Piltover region Piltover & Zaun	9	6	6	Epic rarity Epic
+01PZ049	Progress Day!	Spell		Unified Piltover region Piltover & Zaun	8	0	0	Epic rarity Epic
+01PZ050	Rising Spell Force	Spell		Unified Piltover region Piltover & Zaun	3	0	0	Common rarity Common
+01PZ051	Funsmith	Unit		Unified Piltover region Piltover & Zaun	5	2	3	Rare rarity Rare
+01PZ052	Mystic Shot	Spell		Unified Piltover region Piltover & Zaun	2	0	0	Common rarity Common
+01PZ053	Clump of Whumps	Unit		Unified Piltover region Piltover & Zaun	2	2	2	Common rarity Common
+01PZ054	Boomcrew Rookie	Unit		Unified Piltover region Piltover & Zaun	2	1	4	Common rarity Common
+01PZ055	Astute Academic	Unit		Unified Piltover region Piltover & Zaun	1	1	2	Common rarity Common
+01PZ056	Heimerdinger	Unit		Unified Piltover region Piltover & Zaun	5	1	3	Champion rarity Champion
+01PZ057	Scrapdash Assembly	Spell		Unified Piltover region Piltover & Zaun	2	0	0	Common rarity Common
+01PZ058	Chump Whump	Unit		Unified Piltover region Piltover & Zaun	4	4	3	Rare rarity Rare
+01PZ059	Golden Crushbot	Unit		Unified Piltover region Piltover & Zaun	3	2	5	Common rarity Common
+01PZ060	Accelerated Purrsuit	Spell		Unified Piltover region Piltover & Zaun	5	0	0	Epic rarity Epic
+01SI001	Vengeance	Spell		Shadow Isles region Shadow Isles	7	0	0	Common rarity Common
+01SI002	Spiderling	Unit	Spider	Shadow Isles region Shadow Isles	1	1	1
+01SI003	The Harrowing	Spell		Shadow Isles region Shadow Isles	10	0	0	Epic rarity Epic
+01SI004	Darkwater Scourge	Unit		Shadow Isles region Shadow Isles	3	5	5	Common rarity Common
+01SI005	Scuttlegeist	Unit		Shadow Isles region Shadow Isles	10	5	5	Rare rarity Rare
+01SI006	Possession	Spell		Shadow Isles region Shadow Isles	5	0	0	Rare rarity Rare
+01SI007	Haunted Relic	Spell		Shadow Isles region Shadow Isles	2	0	0	Common rarity Common
+01SI009	Stirred Spirits	Unit		Shadow Isles region Shadow Isles	2	3	2	Common rarity Common
+01SI010	Onslaught of Shadows	Spell		Shadow Isles region Shadow Isles	2	0	0	Common rarity Common
+01SI011	Ravenous Butcher	Unit		Shadow Isles region Shadow Isles	0	3	2	Common rarity Common
+01SI012	Oblivious Islander	Unit		Shadow Isles region Shadow Isles	1	2	1	Common rarity Common
+01SI014	Mistwraith	Unit		Shadow Isles region Shadow Isles	2	2	2	Common rarity Common
+01SI015	The Ruination	Spell		Shadow Isles region Shadow Isles	9	0	0	Epic rarity Epic
+01SI016	Wraithcaller	Unit		Shadow Isles region Shadow Isles	4	4	3	Rare rarity Rare
+01SI018	Scribe of Sorrows	Unit		Shadow Isles region Shadow Isles	3	2	3	Common rarity Common
+01SI019	The Box	Spell		Shadow Isles region Shadow Isles	4	0	0	Rare rarity Rare
+01SI020	The Rekindler	Unit		Shadow Isles region Shadow Isles	7	4	4	Rare rarity Rare
+01SI021	Shark Chariot	Unit		Shadow Isles region Shadow Isles	2	3	1	Rare rarity Rare
+01SI022	Mark of the Isles	Spell		Shadow Isles region Shadow Isles	1	0	0	Common rarity Common
+01SI023	Soul Shepherd	Unit		Shadow Isles region Shadow Isles	2	2	3	Common rarity Common
+01SI024	Spectral Rider	Unit		Shadow Isles region Shadow Isles	2	2	2
+01SI025	Atrocity	Spell		Shadow Isles region Shadow Isles	6	0	0	Rare rarity Rare
+01SI026	Warden's Prey	Unit		Shadow Isles region Shadow Isles	1	1	1	Common rarity Common
+01SI027	Fresh Offerings	Spell		Shadow Isles region Shadow Isles	3	0	0	Rare rarity Rare
+01SI028	Splinter Soul	Spell		Shadow Isles region Shadow Isles	3	0	0	Rare rarity Rare
+01SI029	Withering Wail	Spell		Shadow Isles region Shadow Isles	5	0	0	Common rarity Common
+01SI030	Kalista	Unit		Shadow Isles region Shadow Isles	3	4	3	Champion rarity Champion
+01SI031	Iron Harbinger	Unit		Shadow Isles region Shadow Isles	3	2	4	Rare rarity Rare
+01SI032	Chronicler of Ruin	Unit		Shadow Isles region Shadow Isles	4	3	3	Common rarity Common
+01SI033	Commander Ledros	Unit		Shadow Isles region Shadow Isles	9	9	6	Epic rarity Epic
+01SI034	Black Spear	Spell		Shadow Isles region Shadow Isles	3	0	0	Common rarity Common
+01SI035	Rhasa the Sunderer	Unit		Shadow Isles region Shadow Isles	8	7	5	Epic rarity Epic
+01SI036	Crawling Sensation	Spell		Shadow Isles region Shadow Isles	1	0	0	Common rarity Common
+01SI037	Sinister Poro	Unit	Poro	Shadow Isles region Shadow Isles	1	1	1	Common rarity Common
+01SI038	Phantom Prankster	Unit		Shadow Isles region Shadow Isles	3	0	3	Rare rarity Rare
+01SI039	Arachnoid Horror	Unit	Spider	Shadow Isles region Shadow Isles	2	3	2	Common rarity Common
+01SI040	Vile Feast	Spell		Shadow Isles region Shadow Isles	2	0	0	Common rarity Common
+01SI041	The Undying	Unit		Shadow Isles region Shadow Isles	3	2	2	Epic rarity Epic
+01SI042	Hecarim	Unit		Shadow Isles region Shadow Isles	6	4	5	Champion rarity Champion
+01SI043	Hapless Aristocrat	Unit		Shadow Isles region Shadow Isles	1	1	1	Common rarity Common
+01SI044	Spectral Matron	Unit		Shadow Isles region Shadow Isles	8	6	6	Epic rarity Epic
+01SI045	Absorb Soul	Spell		Shadow Isles region Shadow Isles	1	0	0	Common rarity Common
+01SI046	Mist's Call	Spell		Shadow Isles region Shadow Isles	3	0	0	Common rarity Common
+01SI047	Fading Memories	Spell		Shadow Isles region Shadow Isles	0	0	0	Rare rarity Rare
+01SI048	Cursed Keeper	Unit		Shadow Isles region Shadow Isles	2	1	1	Common rarity Common
+01SI049	Glimpse Beyond	Spell		Shadow Isles region Shadow Isles	2	0	0	Common rarity Common
+01SI050	Brood Awakening	Spell		Shadow Isles region Shadow Isles	5	0	0	Rare rarity Rare
+01SI051	Tortured Prodigy	Unit		Shadow Isles region Shadow Isles	5	4	4	Rare rarity Rare
+01SI052	Thresh	Unit		Shadow Isles region Shadow Isles	5	3	6	Champion rarity Champion
+01SI053	Elise	Unit	Spider	Shadow Isles region Shadow Isles	2	2	3	Champion rarity Champion
+01SI054	Grasp of the Undying	Spell		Shadow Isles region Shadow Isles	5	0	0	Common rarity Common
+01SI055	Soulgorger	Unit		Shadow Isles region Shadow Isles	6	3	7	Rare rarity Rare
+01SI056	Frenzied Skitterer	Unit	Spider	Shadow Isles region Shadow Isles	3	3	3	Rare rarity Rare
+01SI057	Ancient Crocolith	Unit		Shadow Isles region Shadow Isles	4	7	7	Rare rarity Rare
+01SI058	Ethereal Remitter	Unit		Shadow Isles region Shadow Isles	5	4	3	Rare rarity Rare

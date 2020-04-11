@@ -8,6 +8,7 @@ export default class Main extends Component {
 
   @action
   async createNewRoom(person) {
+
     const resp = await fetch(config.API_URL, {
       method: "POST"
     });

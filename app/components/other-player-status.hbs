@@ -1,0 +1,25 @@
+{{#if @otherPlayerConnected}}
+<h4 class="f5 green">Opponent connected.</h4>
+<h4 class="f5">
+  {{#if @deckSelectionPhase}}
+    {{#if @otherPlayerDecksSubmitted}}
+      Opponent submitted their decks
+    {{else}}
+      Waiting for opponent to submit their decks <WaitingDots />
+    {{/if}}
+  {{/if}}
+  {{#if @banSelectionPhase}}
+    {{#if @opponentBannedDeck}}
+      <span class="orange">Opoonent banned {{@bannedDeckString}}.</span>
+    {{else}}
+      {{#if @otherPlayerBanSubmitted}}
+        Opponent has submitted their ban choice.
+        {{else}}
+        Waiting on opponent to ban a deck. <WaitingDots />
+      {{/if}}
+    {{/if}}
+  {{/if}}
+</h4>
+{{else}}
+  <h4 class="f5">Waiting for opponent to connect<WaitingDots /></h4>
+{{/if}}

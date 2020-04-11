@@ -1,31 +1,16 @@
-<h2>Lobby: {{@roomName}}</h2>
+<h3 class="f3">Lobby:<span class="ml2 maroon bg-light-gray code pa2">https://runeterraban.com/{{@roomName}}</span></h3>
 
+<OtherPlayerStatus
+  @otherPlayerConnected={{this.otherPlayerConnected}}
+  @deckSelectionPhase={{this.deckSelectionPhase}}
+  @otherPlayerDecksSubmitted={{this.otherPlayerDecksSubmitted}}
+  @otherPlayerBanSubmitted={{this.otherPlayerBanSubmitted}}
+  @banSelectionPhase={{this.banSelectionPhase}}
+  @opponentBannedDeck={{this.opponentBannedDeck}}
+  @bannedDeckString={{this.bannedDeckString}} />
 
-<section>
   {{#if this.otherPlayerConnected}}
-    {{#if this.deckSelectionPhase}}
-      <h4 class="">
-        {{#if this.otherPlayerDecksSubmitted }}
-          Opponent submitted their decks, waiting on your response<WaitingDots />
-        {{else}}
-          <span class="dark-green">Player Connected:</span> Waiting for them to submit decks<WaitingDots />
-        {{/if}}
-      </h4>
-      {{/if}}
-
     {{#if this.banSelectionPhase }}
-      <h4 class="">
-        {{#if this.opponentBannedDeck}}
-          <span class="orange">Opoonent has chosen to ban {{this.opponentBannedDeck}}.</span> (Deck {{this.opponentBannedDeckIdx}})
-        {{else}}
-          {{#if this.otherPlayerBanSubmitted }}
-            Opponent has banned a deck, waiting on your response<WaitingDots />
-          {{else}}
-            Waiting for opponent to ban a deck<WaitingDots />
-          {{/if}}
-        {{/if}}
-      </h4>
-
       {{#if this.banSelected}}
         <h5>You have banned {{this.bannedDeck}}</h5>
       {{else}}
@@ -59,11 +44,7 @@
         {{/if}}
       </form>
     {{/if}}
-
-  {{else}}
-    <h4 class="mono">Waiting for another player to connect<WaitingDots /></h4>
   {{/if}}
-</section>
 
 
 
@@ -108,9 +89,9 @@
   {{/if}}
 </section>
 
-<section class="mt5 code gray">
+<!-- <section class="mt5 code gray">
   <h4 class=" code pa0 ma0">Debug:</h4>
   {{#each this.messages as |message|}}
     <output class="db">{{message}}</output>
   {{/each}}
-</section>
+</section> -->

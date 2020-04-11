@@ -3,6 +3,7 @@ import { action } from "@ember/object";
 import { inject } from "@ember/service";
 import { tracked } from "@glimmer/tracking";
 import config from "../config/environment";
+import runeterra from "runeterra";
 
 /*
 // # NEW_LOBBY
@@ -45,6 +46,7 @@ export default class BanGame extends Component {
 
   @tracked bannedDeckIdx = null;
   @tracked bannedDeck = null;
+  @tracked bannedDeckString = null;
 
   @tracked opponentBannedDeck = null;
   @tracked opponentBannedDeckIdx = null;
@@ -117,6 +119,7 @@ export default class BanGame extends Component {
       if (splitData[1] !== this.role) {
         this.opponentBannedDeck = this[`deck${Number(splitData[2]) + 1}`];
         this.opponentBannedDeckIdx = Number(splitData[2]) + 1;
+        this.bannedDeckString = this[`deck${Number(splitData[2]) + 1}`];
       }
     }
 

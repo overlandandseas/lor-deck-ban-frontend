@@ -1,0 +1,34 @@
+.fj-io {
+  background: rgb(90,184,218);
+  background: linear-gradient(0deg, rgba(90,184,218,0.25) 0%, rgba(207,130,155,0.25) 100%);
+}
+
+.pz-si {
+  background: rgb(226,159,118);
+  background: linear-gradient(0deg, rgba(226,159,118,0.25) 0%, rgba(59,112,111,0.25) 100%);
+}
+
+.demacia {
+  background: rgba(191, 176, 131, 0.25)
+}
+
+@font-face {
+  font-family: runeterra;
+  src: url("/BeaufortforLOL-Regular.woff");
+}
+
+.runeterra {
+  font-family: runeterra;
+}
+
+.width {
+  width: 1198px;
+}
+
+.maroon {
+  color: #906075;
+}
+
+.b--maroon {
+  border-color: #906075;
+}
