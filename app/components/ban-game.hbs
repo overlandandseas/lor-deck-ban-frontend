@@ -19,15 +19,21 @@
       <form onsubmit={{action "banDeck"}}>
         <div class="pa1">
           <Input @name="op-deck" @value="0" @type="radio" id="op-deck-1" />
-          <label for="op-deck-1" class="{{if (eq this.bannedDeckIdx '0') 'strike'}}">{{get this.opponentDeckList 0}}</label>
+          <label for="op-deck-1" class="{{if (eq this.bannedDeckIdx '0') 'strike'}}">
+            {{link-or-not (get this.opponentDeckList 0)}}
+          </label>
         </div>
         <div class="pa1">
           <Input @name="op-deck" @value="1" @type="radio" id="op-deck-2" />
-          <label for="op-deck-2" class="{{if (eq this.bannedDeckIdx '1') 'strike'}}">{{get this.opponentDeckList 1}}</label>
+          <label for="op-deck-2" class="{{if (eq this.bannedDeckIdx '1') 'strike'}}">
+            {{link-or-not (get this.opponentDeckList 1)}}
+          </label>
         </div>
         <div class="pa1 mb3">
           <Input @name="op-deck" @value="2" @type="radio" id="op-deck-3" />
-          <label for="op-deck-3" class="{{if (eq this.bannedDeckIdx '2') 'strike'}}">{{get this.opponentDeckList 2}}</label>
+          <label for="op-deck-3" class="{{if (eq this.bannedDeckIdx '2') 'strike'}}">
+            {{link-or-not (get this.opponentDeckList 2)}}
+          </label>
         </div>
         {{#if this.banSelected}}
           <button

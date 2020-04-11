@@ -103,7 +103,7 @@ export default class BanGame extends Component {
       this.banSelectionPhase = true;
       this.deckSelectionPhase = false;
       if (splitData[1] !== this.role) {
-        this.opponentDeckList = splitData[2].split("|");
+        this.opponentDeckList = splitData[2].split("|").map(decodeURIComponent);
       }
     }
 
@@ -167,8 +167,12 @@ export default class BanGame extends Component {
   @action
   submitDecks(evt) {
     evt.preventDefault();
+    const deck1Encoded = encodeURIComponent(this.deck1);
+    const deck2Encoded = encodeURIComponent(this.deck2);
+    const deck3Encoded = encodeURIComponent(this.deck3);
+
     this.send(
-      `DECK_SUBMIT:${this.role}:${this.deck1}|${this.deck2}|${this.deck3}`
+      `DECK_SUBMIT:${this.role}:${deck1Encoded}|${deck2Encoded}|${deck3Encoded}`
     );
   }
 
