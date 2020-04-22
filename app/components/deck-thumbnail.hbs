@@ -1,0 +1,12 @@
+
+
+  <div class="bg-white dark-gray pa2 flex items-center shadow-3 bw2 bb b--{{this.primaryRegion}} w6">
+    {{#each @deck.regions as |region|}}
+      <img class="db w2" src="/img/{{trim region}}.png" />
+    {{/each}}
+    {{#if @name}}
+      <h5 class="w5 pl2 mv0 code truncate">{{@name}}</h5>
+    {{else}}
+      <h5 class="w5 pl2 mv0 code truncate">{{@deck.code}}</h5>
+    {{/if}}
+  </div>

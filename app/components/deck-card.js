@@ -23,5 +23,4 @@ export default class DeckCard extends Component {
     }
     return cards;
   }
-
 }

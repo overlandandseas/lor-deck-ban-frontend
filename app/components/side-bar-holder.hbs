@@ -1,0 +1,21 @@
+<div class="pa3 fr vh-100">
+  <h2 class="fw1">Saved Decks </h2>
+  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck}} @name="Ezreal SI (Rank 50 NA)"/></div>
+  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck2}} @name="This is a deck name"/></div>
+  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck3}} @name="Tough Love"/></div>
+  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck4}} /></div>
+  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck}} @name="Lockdown"/></div>
+  <div class="ph1 mt3 w6">
+
+    <button class="f5 bg-white dib ba b--maroon maroon ph4 pv3 shadow-4 no-underline shadow-hover" {{on "click" this.openModal}}>
+      + New Deck
+    </button>
+
+
+    {{#if this.isModalOpen}}
+      <Modal @clickedOutside={{this.closeModal}}>
+        <p>hey there content</p>
+      </Modal>
+    {{/if}}
+  </div>
+</div>
