@@ -6,9 +6,7 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-     extensions: ['js', 'css', 'jpg', 'gif'],
-      exclude: ['BeaufortforLOL-Regular.woff'],
-      prepend: 'https://sudomain.cloudfront.net/'
+     extensions: ['js', 'css', 'jpg', 'gif']
 }
   });
 
