@@ -1,5 +1,6 @@
 import Service from '@ember/service';
 import Deck from 'lor-card-ban-frontend/utils/Deck'
+import { set } from '@ember/object';
 
 
 export default class SavedDecksService extends Service {
@@ -7,30 +8,41 @@ export default class SavedDecksService extends Service {
   constructor() {
     super(...arguments);
 
-    this.deckCodeList = JSON.parse(localstorage.getItem("deckCodeList"));
+    const storageItem = localStorage.getItem("deckCodeList")
 
+    if (storageItem) {
+      this.deckCodeList = JSON.parse(storageItem);
+    } else {
+      this.deckCodeList = []
+    }
 
-    this.deckList = this.deckCodeList.map(code => new Deck(code));
+    this.deckList = this.deckCodeList.map(val => {
+      return {
+        name: val.name,
+        deck: new Deck(val.deckCode)
+      }
+    });
   }
 
 
 
-  saveDeck(deck) {
-    this.deckCodeList.push(deck.code)
+  saveDeck(deck, name) {
+    set(this, 'deckCodeList', [...this.deckCodeList, { name, deckCode: deck.code }]);
+    set(this, 'deckList', [...this.deckList, { name, deck }]);
 
-    this.deckList.push(deck);
-  }
-
-
-  removeDeck(deck) {
-    this.deckCodeList = this.deckCodeList.filter(code => code !== deck.code);
     this._saveStorage();
-
-    this.deckList = this.deckList.filter(d => d.code !== deck.code);
   }
 
 
-  _saveStorage(){
+  removeDeck(name) {
+    set(this, 'deckCodeList', this.deckCodeList.filter(val => val.name !== name));
+    set(this, 'deckList', this.deckList.filter(val => val.name !== name));
+
+    this._saveStorage();
+  }
+
+
+  _saveStorage() {
     localStorage.setItem("deckCodeList", JSON.stringify(this.deckCodeList))
   }
 }

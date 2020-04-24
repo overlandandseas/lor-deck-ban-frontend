@@ -1,21 +1,67 @@
 <div class="pa3 fr vh-100">
   <h2 class="fw1">Saved Decks </h2>
-  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck}} @name="Ezreal SI (Rank 50 NA)"/></div>
-  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck2}} @name="This is a deck name"/></div>
-  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck3}} @name="Tough Love"/></div>
-  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck4}} /></div>
-  <div class="dim pointer pa1"><DeckThumbnail @deck={{this.deck}} @name="Lockdown"/></div>
+  {{#each this.savedDecks.deckList as |deck|}}
+    <div class="dim pointer ma1" {{on "click" (fn this.openViewDeckModal deck.deck deck.name)}}><DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} /></div>
+  {{/each}}
   <div class="ph1 mt3 w6">
-
-    <button class="f5 bg-white dib ba b--maroon maroon ph4 pv3 shadow-4 no-underline shadow-hover" {{on "click" this.openModal}}>
+    <button class="f5 bg-white dib ba b--maroon maroon ph4 pv3 shadow-4 no-underline shadow-hover" {{on "click" this.openNewDeckModal}}>
       + New Deck
     </button>
-
-
-    {{#if this.isModalOpen}}
-      <Modal @clickedOutside={{this.closeModal}}>
-        <p>hey there content</p>
-      </Modal>
-    {{/if}}
   </div>
 </div>
+
+
+{{#if this.isNewDeckModalOpen}}
+  <Modal @clickedOutside={{this.closeNewDeckModal}}>
+    <h2>Add a deck</h2>
+    <Input placeholder="Paste Deck Code Here..." class="code db pa3 w-100 ba br2 b--black-70" @value={{this.deckCode}} type="text"/>
+    {{#if (and (eq this.isValidDeck false) this.deckCode)}}
+      <p class="red">Invalid Deck Code</p>
+      {{else}}
+      <p> </p>
+    {{/if}}
+    {{#if this.isValidDeck}}
+      <p>
+        Enter Deck Name
+        <Input placeholder="Untitled {{get this.newDeck.regions 0 }} / {{get this.newDeck.regions 1 }}" class="db mv2 w5 pa2 br2 ba b--black-60" @value={{this.newDeckName}}/>
+      </p>
+        <DeckList @deck={{this.newDeck}}/>
+        <div class="w-100 flex justify-between">
+          <button
+            class="f5 dib ba br2 b--black-20 bg-maroon white ph3 pv2 shadow-4 no-underline shadow-hover"
+            {{on "click" this.saveDeck}}
+          >
+            Save
+          </button>
+          <button
+            class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline shadow-hover"
+            {{on "click" this.closeNewDeckModal}}
+          >
+            Cancel
+          </button>
+        </div>
+    {{/if}}
+  </Modal>
+{{/if}}
+
+{{#if this.isViewDeckModalOpen}}
+  <Modal @clickedOutside={{this.closeViewDeckModal}}>
+    <h2>{{this.viewDeckName}}</h2>
+    <h3 class="code">{{this.viewDeck.code}}</h3>
+    <DeckList @deck={{this.viewDeck}}/>
+    <div class="w-100 flex justify-between">
+      <button
+        class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline shadow-hover"
+        {{on "click" this.closeViewDeckModal}}
+      >
+        Close
+      </button>
+      <button
+        class="f5 dib ba b--black-20 bg-dark-red white ph3 pv2 shadow-4 br2 no-underline shadow-hover"
+        {{on "click" this.removeDeck}}
+      >
+        Delete
+      </button>
+    </div>
+  </Modal>
+{{/if}}

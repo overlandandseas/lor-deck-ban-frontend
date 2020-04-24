@@ -1,5 +1,6 @@
 import { DeckEncoder } from 'runeterra';
 import { DATA_MAP } from 'lor-card-ban-frontend/utils/set-1-data'
+import { set } from '@ember/object';
 
 
 export default class Deck {
@@ -14,10 +15,11 @@ export default class Deck {
 
     this.code = deckCode;
 
-    const decodedDeck = DeckEncoder.decode(deckCode);
+    this.decodedDeck = DeckEncoder.decode(deckCode);
 
-    decodedDeck.forEach(card => {
+    this.decodedDeck.forEach(card => {
       const cardObj = DATA_MAP[card.code];
+      set(cardObj, 'count', card.count);
       this.cards.push(cardObj);
 
       // Region
@@ -42,6 +44,7 @@ export default class Deck {
         }
       }
     });
+
 
     this.regions = Object.keys(this.regionsObj);
     this.regions.sort((a, b) => this.regionsObj[b] - this.regionsObj[a]);

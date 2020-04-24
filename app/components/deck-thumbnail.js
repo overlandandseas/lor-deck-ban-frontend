@@ -1,9 +1,6 @@
 import Component from "@glimmer/component";
 import { computed } from '@ember/object';
 
-import {DECK_MAP} from './card-data';
-
-
 export default class DeckThumbnail extends Component {
 
 

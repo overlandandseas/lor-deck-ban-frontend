@@ -23,32 +23,68 @@
   background-color: #906075
 }
 
-.Demacia {
-  background: rgba(191, 176, 131, 0.25)
+.bg-Demacia {
+  background:  linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(221, 206, 191, 0.15) 100%);
 }
 
-.Ionia {
+.bg-Ionia {
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(207,130,155,0.25) 100%);
 }
 
-.Freljord {
+.bg-Freljord {
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(90,184,218,0.25) 100%);
+}
+
+.bg-Noxus {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(160, 82, 79, 0.25) 100%)
 }
 
 .b--Ionia {
   border-color: rgba(207,130,155,1);
 }
 
+.Ionia {
+  color: rgba(207,130,155,1);
+}
+
 .b--Demacia {
   border-color: rgba(191, 176, 131, 1);
+}
+
+.Demacia {
+  color: rgba(191, 176, 131, 1);
 }
 
 .b--ShadowIsles {
   border-color: rgba(59,150,111,1);
 }
 
+.ShadowIsles {
+  color: rgba(59,150,111,1);
+}
+
 .b--Freljord {
-  background-color: rgba(90,184,218,1);
+  border-color: rgba(90, 184, 218, 1);
+}
+
+.Freljord {
+  color: rgba(90, 184, 218, 1);
+}
+
+.b--Noxus {
+  border-color: rgba(160, 82, 79, 1);
+}
+
+.Noxus {
+  color: rgba(160, 82, 79, 1);
+}
+
+.bg-ShadowIsles {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(59,150,111,0.25) 100%)
+}
+
+.bg-PiltoverZaun {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(226, 159, 118, 0.25) 100%)
 }
 
 .w6 {
@@ -57,4 +93,12 @@
 
 .b--PiltoverZaun {
   border-color: rgba(226, 159, 118, 1)
+}
+
+.PiltoverZaun {
+  color: rgba(226, 159, 118, 1)
+}
+
+.push-left {
+  transform: translateX(-275px);
 }
