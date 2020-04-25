@@ -29,8 +29,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.API_URL = "http://localhost:4567/";
-    ENV.WS_URL = "ws://localhost:4567/";
+    ENV.API_URL = "http://localhost:7000/";
+    ENV.WS_URL = "ws://localhost:7000/";
   }
 
   if (environment === "test") {

@@ -28,9 +28,11 @@ function checkValidity(decks) {
   console.dir(decks);
   let isValid = false;
   try {
-    isValid =  decks.every(deck => DeckEncoder.isValidDeck(DeckEncoder.dencode(deck)))
+    isValid = decks.every((deck) =>
+      DeckEncoder.isValidDeck(DeckEncoder.dencode(deck))
+    );
   } catch (_) {
-    console.log('invalid deck');
+    console.log("invalid deck");
   }
   return isValid;
 }
@@ -104,7 +106,7 @@ export default class BanGame extends Component {
     }
     if (data === "LOBBY_FOUND") {
       this.lobbyFound();
-      this.timeout = this.ping()
+      this.timeout = this.ping();
     }
     if (data === "2_CONNECTED") {
       this.otherPlayerConnected = true;
@@ -126,7 +128,11 @@ export default class BanGame extends Component {
       this.deckSelectionPhase = false;
       if (splitData[1] !== this.role) {
         this.opponentDeckList = splitData[2].split("|").map(decodeURIComponent);
+<<<<<<< HEAD
         this.validDecks = false
+=======
+        this.validDecks = checkValidity(this.opponentDeckList);
+>>>>>>> changes to dev
         clearTimeout(this.timeout);
       }
     }
