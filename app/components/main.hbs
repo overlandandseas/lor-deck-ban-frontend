@@ -2,6 +2,37 @@
 Create room and paste link to opponent to begin banning decks.
 </p>
 <p class="tc">
+  <table class="center">
+    <tr>
+      <td class="pa2">
+        <label for="numberOfDecks">Number of Decks</label>
+      </td>
+      <td class="pa2">
+        <select class="pa1" id="numberOfDecks" {{on "change" this.onNumberOfDecksChange}}>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="pa2">
+        <label for="numberOfBans">Number of Bans</label>
+      </td>
+      <td class="pa2">
+        <select class="pa1" id="numberOfBans" {{on "change" this.onNumberOfBansChange}} value={{this.numberOfBans}}>
+          {{#each this.banOptions as |banOption|}}
+            <option value={{banOption}} >{{banOption}}</option>
+          {{/each}}
+        </select>
+      </td>
+    </tr>
+  </table>
 <button
   {{action "createNewRoom"}}
   class="ma3 f5 dib ba b--black-20 bg-maroon white ph4 pv3 shadow-4 no-underline shadow-hover">
