@@ -1,10 +1,15 @@
-<SideBarHolder />
-
-
-<div class="bt bw2 b--maroon w-100">
-<h1 class="tc mb2 mt4 fw6 f1 lh-title ttu runeterra">Legends of Runeterra</h1>
-<h2 class="tc mv2 fw6 f2 runeterra">Deck Ban</h2>
-<section class="mw9 center ph4">
-  {{outlet}}
-</section>
+<div class="flex justify-between w-100 bg-black-20 white bb bw1 b--black-40">
+  <div class=" flex items-center pa3">
+    <img src="/assets/images/LoR-small.svg" class="db h2 w2" />
+    <div class="f4 ml3 runeterra">Legends of Runeterra Deck Ban</div>
+  </div>
+    <div class="flex items-center">
+      <a href="#" class="f4 runeterra pa3 db bl bw1 b--black-40 link white h-100 lh-copy hover-bg-black-40 bg-animate">about</a><a href="#" class="f4 runeterra pa3 db link white bl bw1 b--black-40 h-100 lh-copy hover-bg-black-40 bg-animate">updates</a>
+    </div>
+</div>
+<div class="mw9 center">
+  <SideBarHolder />
+  <section class="ma5">
+    {{outlet}}
+  </section>
 </div>

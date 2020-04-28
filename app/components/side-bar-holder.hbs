@@ -1,10 +1,17 @@
-<div class="pa3 fr vh-100">
-  <h2 class="fw1">Saved Decks </h2>
+<div class="mh4 fr">
+  <h2 class="fw1 tl mt0">Saved Decks </h2>
   {{#each this.savedDecks.deckList as |deck|}}
-    <div class="dim pointer ma1" {{on "click" (fn this.openViewDeckModal deck.deck deck.name)}}><DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} /></div>
+  <DragZone @deck={{deck}}>
+    <div class="mt3" {{on "click" (fn this.openViewDeckModal deck.deck deck.name)}}>
+        <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
+    </div>
+  </DragZone>
   {{/each}}
-  <div class="ph1 mt3 w6">
-    <button class="f5 bg-white dib ba b--maroon maroon ph4 pv3 shadow-4 no-underline shadow-hover" {{on "click" this.openNewDeckModal}}>
+  {{#unless this.savedDecks.deckList.length}}
+    <p class="mv4 w5 white">-- None -- </p>
+  {{/unless}}
+  <div class="ph1 mt3">
+    <button class="bg-dark-card dib ba b--maroon ph4 pv3 shadow-4 no-underline shadow-hover br3 white-50 link hover-white" {{on "click" this.openNewDeckModal}}>
       + New Deck
     </button>
   </div>
@@ -13,28 +20,30 @@
 
 {{#if this.isNewDeckModalOpen}}
   <Modal @clickedOutside={{this.closeNewDeckModal}}>
+    <div class="tc">
     <h2>Add a deck</h2>
-    <Input placeholder="Paste Deck Code Here..." class="code db pa3 w-100 ba br2 b--black-70" @value={{this.deckCode}} type="text"/>
-    {{#if (and (eq this.isValidDeck false) this.deckCode)}}
-      <p class="red">Invalid Deck Code</p>
-      {{else}}
-      <p> </p>
-    {{/if}}
+      <Input placeholder="Paste Deck Code Here..." class="code db pa3 w-100 ba br2 b--black-70" @value={{this.deckCode}} type="text"/>
+      {{#if (and (eq this.isValidDeck false) this.deckCode)}}
+        <p class="red">Invalid Deck Code</p>
+        {{else}}
+        <p> </p>
+      {{/if}}
+    </div>
     {{#if this.isValidDeck}}
-      <p>
+      <p class="tc">
         Enter Deck Name
-        <Input placeholder="Untitled {{get this.newDeck.regions 0 }} / {{get this.newDeck.regions 1 }}" class="db mv2 w5 pa2 br2 ba b--black-60" @value={{this.newDeckName}}/>
+        <Input placeholder="{{get this.newDeck.regions 0 }} / {{get this.newDeck.regions 1 }} Deck" class="center db mv2 w5 pa2 br2 ba b--black-60" @value={{this.newDeckName}}/>
       </p>
         <DeckList @deck={{this.newDeck}}/>
         <div class="w-100 flex justify-between">
           <button
-            class="f5 dib ba br2 b--black-20 bg-maroon white ph3 pv2 shadow-4 no-underline shadow-hover"
+            class="f5 dib ba br2 b--black-20 bg-maroon white ph3 pv2 shadow-4 no-underline pointer"
             {{on "click" this.saveDeck}}
           >
             Save
           </button>
           <button
-            class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline shadow-hover"
+            class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer"
             {{on "click" this.closeNewDeckModal}}
           >
             Cancel
@@ -46,18 +55,18 @@
 
 {{#if this.isViewDeckModalOpen}}
   <Modal @clickedOutside={{this.closeViewDeckModal}}>
-    <h2>{{this.viewDeckName}}</h2>
-    <h3 class="code">{{this.viewDeck.code}}</h3>
+    <h2 class="fw1 tc">{{this.viewDeckName}}</h2>
+    <h3 class="code tracked tc fw1 break-word">{{this.viewDeck.code}}</h3>
     <DeckList @deck={{this.viewDeck}}/>
     <div class="w-100 flex justify-between">
       <button
-        class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline shadow-hover"
+        class="bg-dark-mode f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer dim"
         {{on "click" this.closeViewDeckModal}}
       >
         Close
       </button>
       <button
-        class="f5 dib ba b--black-20 bg-dark-red white ph3 pv2 shadow-4 br2 no-underline shadow-hover"
+        class="f5 dib ba b--dark-red bg-dark-card dark-red ph3 pv2 shadow-4 br2 no-underline pointer dim"
         {{on "click" this.removeDeck}}
       >
         Delete

@@ -1,12 +1,15 @@
 
 
-  <div class="bg-white dark-gray pa2 flex items-center shadow-3 bw2 bb b--{{this.primaryRegion}} w6">
+  <div class="w5 bg-dark-card white-50 hover-white link pointer pa3 br3 shadow-4">
+    <div class="flex">
     {{#each @deck.regions as |region|}}
-      <img class="db w2" src="assets/images/{{trim region}}.png" />
+      <img class="db w2 h2 no-pointer" src="assets/images/{{trim region}}.png" />
     {{/each}}
+    </div>
+    <hr class="b--white-20">
     {{#if @name}}
-      <h5 class="w5 pl2 mv0 code truncate">{{@name}}</h5>
+      <p class="truncate ma0 pa0">{{@name}}</p>
     {{else}}
-      <h5 class="w5 pl2 mv0 code truncate">{{@deck.code}}</h5>
+      <p class="truncate ma0 pa0">{{@deck.code}}</p>
     {{/if}}
   </div>

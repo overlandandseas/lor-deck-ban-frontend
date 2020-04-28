@@ -16,11 +16,11 @@
 }
 
 .b--maroon {
-  border-color: #906075;
+  border-color: #704055;
 }
 
 .bg-maroon {
-  background-color: #906075
+  background-color: #704055
 }
 
 .bg-Demacia {
@@ -88,7 +88,7 @@
 }
 
 .w6 {
-  width: 350px;
+  width: 275px;
 }
 
 .b--PiltoverZaun {
@@ -101,4 +101,25 @@
 
 .push-left {
   transform: translateX(-275px);
+}
+
+.bg-dark-mode {
+  background-color: #1e1e2f;
+  /* background: rgb(30,30,47);
+  background: linear-gradient(180deg, rgba(30,30,47,1) 0%, rgba(39,41,61,1) 100%); */
+}
+
+.bg-dark-card {
+  background-color: #27293d;
+}
+.dark-mode {
+  color: #525f7f;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.break-word {
+  word-wrap: break-word;
 }

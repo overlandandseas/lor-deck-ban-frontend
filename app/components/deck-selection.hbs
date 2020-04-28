@@ -1,0 +1,34 @@
+<h2 class="fw1">Select Your Decks</h2>
+
+{{#each this.dragAndDrop.deckArray as |deck index|}}
+  <div class="mv3">
+  {{#if deck.name}}
+    <div class="flex items-center">
+      <div {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
+        <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
+      </div>
+      {{#unless @decksSubmitted}}
+      <button class="link white-50 hover-white ml3 bg-dark-mode bn pointer" {{on "click" (fn @removeDeckFromList index)}}>Clear</button>
+      {{/unless}}
+    </div>
+  {{else}}
+    <DropZone @idx={{index}}/>
+  {{/if}}
+  </div>
+{{/each}}
+{{#if @decksSubmitted}}
+  <h3 class="fw1">Decks have been submitted waiting on your oponnent<WaitingDots /></h3>
+  {{else}}
+    {{#if (and this.dragAndDrop.allDecksGood @otherPlayerConnected)}}
+      <button
+        {{on "click" @submitDecks}}
+        class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline dim pointer"
+        >
+        Submit Decks
+      </button>
+      {{else}}
+      <button class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline o-50" disabled="true">
+        Submit Decks
+      </button>
+    {{/if}}
+{{/if}}
