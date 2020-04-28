@@ -128,11 +128,7 @@ export default class BanGame extends Component {
       this.deckSelectionPhase = false;
       if (splitData[1] !== this.role) {
         this.opponentDeckList = splitData[2].split("|").map(decodeURIComponent);
-<<<<<<< HEAD
         this.validDecks = false
-=======
-        this.validDecks = checkValidity(this.opponentDeckList);
->>>>>>> changes to dev
         clearTimeout(this.timeout);
       }
     }

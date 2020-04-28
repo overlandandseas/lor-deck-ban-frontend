@@ -47,8 +47,8 @@ module.exports = function(environment) {
 
   if (environment === "production") {
     // here you can enable a production-specific feature
-    ENV.API_URL = "https://lor-deck-ban-server.herokuapp.com/";
-    ENV.WS_URL = "wss://lor-deck-ban-server.herokuapp.com/";
+    ENV.API_URL = "https://lor-deck-ban-backend.herokuapp.com/";
+    ENV.WS_URL = "wss://lor-deck-ban-backend.herokuapp.com/";
   }
 
   return ENV;
