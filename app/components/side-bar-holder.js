@@ -24,6 +24,8 @@ export default class DeckThumbnail extends Component {
 
   @tracked viewDeck;
 
+  @tracked viewDeckName;
+
 
   @computed('deckCode')
   get newDeck() {
@@ -65,7 +67,7 @@ export default class DeckThumbnail extends Component {
   @action
   saveDeck() {
     if(!this.newDeckName) {
-      this.newDeckName = `Untitled ${this.newDeck.regions.join('/')}`
+      this.newDeckName = `${this.newDeck.regions.join(' / ')} Deck`
     }
     this.savedDecks.saveDeck(this.newDeck, this.newDeckName);
     this.deckCode = '';
@@ -91,7 +93,7 @@ export default class DeckThumbnail extends Component {
   @action
   removeDeck() {
     if (window.confirm(`Are you sure you want to remove deck: ${this.viewDeckName}?`)) {
-      this.savedDecks.removeDeck(this.viewDeckName);
+      this.savedDecks.removeDeck(this.viewDeck.code);
       this.isViewDeckModalOpen = false;
       this.viewDeck = null;
       this.viewDeckName = '';

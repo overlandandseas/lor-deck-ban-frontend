@@ -1,6 +1,55 @@
-<section class="mt5 code gray">
-  <h4 class=" code pa0 ma0">Debug:</h4>
-  {{#each this.messages as |message|}}
+<h3 class="f5">Lobby:<span class="ml2 maroon bg-dark-card code pa2">https://runeterraban.com/{{@roomName}}</span></h3>
+
+<OtherPlayerStatus
+  @otherPlayerConnected={{this.otherPlayerConnected}}
+/>
+
+{{#if this.showDeckSelection}}
+  <DeckSelection
+    @openViewDeckModal={{this.openViewDeckModal}}
+    @decksSubmitted={{this.decksSubmitted}}
+    @removeDeckFromList={{this.removeDeckFromList}}
+    @otherPlayerConnected={{this.otherPlayerConnected}}
+    @submitDecks={{this.submitDecks}}
+  />
+{{/if}}
+
+{{#if this.showBanSelection}}
+  <BanSelection
+    @yourDecks={{this.yourDecks}}
+    @opponentDecks={{this.opponentDecks}}
+    @submitBans={{this.submitBans}}
+    @bansSubmitted={{this.bansSubmitted}}
+    @opponentBans={{this.opponentBans}}
+    @numberOfBans={{this.numberOfBans}}
+    @openViewDeckModal={{this.openViewDeckModal}}
+  />
+{{/if}}
+
+
+{{!-- DEBUG MESSAGES --}}
+{{#if debugOn}}
+  <section class="mt5 code white-60">
+    <h4 class=" code pa0 ma0">Debug:</h4>
+    {{#each this.messages as |message|}}
     <output class="db">{{message}}</output>
-  {{/each}}
-</section>
+    {{/each}}
+  </section>
+{{/if}}
+
+
+{{#if this.isViewDeckModalOpen}}
+  <Modal @clickedOutside={{this.closeViewDeckModal}}>
+    <h2 class="fw1 tc">{{this.viewDeckName}}</h2>
+    <h3 class="code tracked tc fw1 break-word">{{this.viewDeck.code}}</h3>
+    <DeckList @deck={{this.viewDeck}}/>
+    <div class="w-100">
+      <button
+        class="bg-dark-mode f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer dim"
+        {{on "click" this.closeViewDeckModal}}
+      >
+        Close
+      </button>
+    </div>
+  </Modal>
+{{/if}}

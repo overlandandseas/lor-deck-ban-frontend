@@ -1,0 +1,53 @@
+<h2 class="fw1">Opponent's Decks</h2>
+<h3 class="fw1">Choose {{@numberOfBans}} to ban</h3>
+
+{{#each @opponentDecks as |deck index| }}
+  <div class="flex items-center mt3">
+    <div class="{{if deck.isBanned "o-30"}}">
+      <div {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
+        <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
+      </div>
+    </div>
+    {{#unless @bansSubmitted}}
+      <label for="opponent-deck-{{index}}" class="pointer  link red hover-dark-red ml3 pa1">
+        {{if deck.isBanned "Unban" "Ban" }}
+      </label>
+    {{/unless}}
+    <Input id="opponent-deck-{{index}}" @type="checkbox" @checked={{deck.isBanned}} class="dn"/>
+  </div>
+{{/each}}
+
+{{#if @bansSubmitted }}
+  {{#if @opponentBans }}
+    <h3 class="fw1 gold">Your opponent has banned: {{@opponentBans}}</h3>
+  {{else}}
+    <h3 class="fw1">Ban is submitted, waiting on your oponnent<WaitingDots /></h3>
+  {{/if}}
+{{else}}
+  {{#if this.validBansChosen}}
+    <button
+      {{on "click" @submitBans}}
+      class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline dim pointer"
+      >
+      Submit Ban
+    </button>
+  {{else}}
+    <button class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline o-50" disabled="true">
+      Submit Ban
+    </button>
+  {{/if}}
+{{/if}}
+<hr class="mv4 b--white-70">
+<h3 class="fw1">Your Submitted Decks</h3>
+{{#each @yourDecks as |deck index|}}
+  <div class="flex items-center mt3">
+    <div class="{{if deck.isBanned "o-30"}}">
+      <div {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
+        <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
+      </div>
+    </div>
+    {{#if deck.isBanned}}
+      <h3 class="fw1 dark-red ml3">Banned</h3>
+    {{/if}}
+  </div>
+{{/each}}
