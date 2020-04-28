@@ -60,7 +60,6 @@ export default class Lobby extends Component {
     this.isViewDeckModalOpen = true;
     this.viewDeck = deck;
     this.viewDeckName = deckName;
-    console.log("opening modal");
   }
 
   @action
@@ -113,7 +112,6 @@ export default class Lobby extends Component {
 
   ping() {
     this.send("PING");
-    console.log("PING");
     setTimeout(this.ping.bind(this), 10000);
   }
 

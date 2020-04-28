@@ -21,7 +21,6 @@ export default class DragAndDropService extends Service {
 
   dropItem(dragEvent, index) {
     dragEvent.preventDefault();
-    console.log("Drop Has Completed", index);
     this.overDropZone[index] = false;
     this.overDropZone = [...this.overDropZone];
 
@@ -35,20 +34,17 @@ export default class DragAndDropService extends Service {
   }
 
   dropLeave(index) {
-    console.log("Drag has left drop zone", index);
     this.overDropZone[index] = false;
     this.overDropZone = [...this.overDropZone];
   }
 
   dropEnter(index) {
-    console.log("Drag is entered Drop Zone", index);
     this.overDropZone[index] = true;
     this.overDropZone = [...this.overDropZone];
   }
 
   dragHasStarted(deck) {
     this.deck = deck;
-    console.log("Drag has started");
   }
 
   setDeckArray(numberOfDecks) {

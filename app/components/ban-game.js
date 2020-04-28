@@ -95,7 +95,7 @@ export default class BanGame extends Component {
 
   ping() {
     this.send("PING");
-    console.log("PING");
+
     setTimeout(this.ping.bind(this), 5000);
   }
 
