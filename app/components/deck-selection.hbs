@@ -2,7 +2,7 @@
 
 {{#each this.dragAndDrop.deckArray as |deck index|}}
   <div class="mv3">
-  {{#if deck.name}}
+  {{#if deck}}
     <div class="flex items-center">
       <div {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
         <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />

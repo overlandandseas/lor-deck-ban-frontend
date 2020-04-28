@@ -48,11 +48,11 @@ export default class DragAndDropService extends Service {
   }
 
   setDeckArray(numberOfDecks) {
-    this.deckArray = new Array(numberOfDecks);
+    this.deckArray = new Array(numberOfDecks).fill(false);
   }
 
   removeDeckFromList(index) {
-    this.deckArray[index] = null;
+    this.deckArray[index] = false;
     this.deckArray = [...this.deckArray];
   }
 }
