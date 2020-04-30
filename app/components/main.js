@@ -3,8 +3,6 @@ import { action } from "@ember/object";
 import { inject } from "@ember/service";
 import config from "../config/environment";
 import { tracked } from "@glimmer/tracking";
-import { computed } from '@ember/object';
-
 
 export default class Main extends Component {
   @inject router;
