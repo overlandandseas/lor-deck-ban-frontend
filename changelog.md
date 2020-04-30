@@ -2,6 +2,8 @@
 
 ## 4/29/2020
 + Removed all unused code
++ Updated Modal UI for viewing decks
++ Added support for set 2
 
 ## 4/28/2020
 + Fixed bug related to clearing selected decks
