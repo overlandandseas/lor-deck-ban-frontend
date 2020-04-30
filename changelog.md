@@ -1,10 +1,11 @@
 # Changelog
 
+## 4/29/2020
++ Removed all unused code
+
 ## 4/28/2020
 + Fixed bug related to clearing selected decks
 + using shared db pool
-
-## 4/28/2020
 + Updated UI to use dark mode
 + Import deck codes support for set 1
 + Saved frequently used decks

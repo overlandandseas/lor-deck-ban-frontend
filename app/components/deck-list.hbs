@@ -1,44 +1,50 @@
-<div class="code">
+<div class="code flex-l justify-around">
 {{#if @deck.champions.length}}
-  <h4 class="center measure">Champions</h4>
-  <ul class="list pl0 measure center">
+<div>
+  <h4 class="center">Champions</h4>
+  <ul class="list pl0 center">
     {{#each @deck.champions as |card|}}
     <li class="pv2 bn br3 ma1 flex justify-between items-center bg-{{trim card.region}}" {{on "mouseenter" (action (mut card.visible true))}} {{on "mouseleave" (action (mut card.visible ) false)}}>
       {{#if card.visible}}
         <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db absolute w5 fl push-left"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db" src="assets/images/{{trim card.region}}.png" width="32px" height="auto" />
+      <img class="db ml3" src="images/{{trim card.region}}.png" width="32px" height="auto" />
     </li>
     {{/each}}
   </ul>
+</div>
 {{/if}}
 {{#if @deck.followers.length}}
-  <h4 class="center measure">Followers</h4>
-  <ul class="list pl0 measure center">
+  <div>
+  <h4 class="center">Followers</h4>
+  <ul class="list pl0 center">
     {{#each @deck.followers as |card|}}
     <li class="pv2 bn br3 ma1 flex justify-between items-center bg-{{trim card.region}}" {{on "mouseenter" (action (mut card.visible true))}} {{on "mouseleave" (action (mut card.visible ) false)}}>
       {{#if card.visible}}
         <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="db absolute w5 fl push-left"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db" src="assets/images/{{trim card.region}}.png" width="32px" height="auto" />
+      <img class="db ml3" src="images/{{trim card.region}}.png" width="32px" height="auto" />
     </li>
     {{/each}}
   </ul>
+</div>
 {{/if}}
 {{#if @deck.spells.length}}
-  <h4 class="center measure">Spells</h4>
-  <ul class="list pl0 measure center">
+  <div>
+  <h4 class="center">Spells</h4>
+  <ul class="list pl0 center">
     {{#each @deck.spells as |card|}}
     <li class="pv2 bn br3 ma1 flex justify-between items-center bg-{{trim card.region}}" {{on "mouseenter" (action (mut card.visible true))}} {{on "mouseleave" (action (mut card.visible ) false)}}>
       {{#if card.visible}}
         <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="db absolute w5 fl push-left"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db" src="assets/images/{{trim card.region}}.png" width="32px" height="auto" />
+      <img class="db ml3" src="images/{{trim card.region}}.png" width="32px" height="auto" />
     </li>
     {{/each}}
   </ul>
+</div>
 {{/if}}
 </div>

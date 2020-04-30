@@ -123,3 +123,13 @@
 .break-word {
   word-wrap: break-word;
 }
+
+
+.changelog h1,
+.changelog h2,
+.changelog h3,
+.changelog h4,
+.changelog h5,
+.changelog h6 {
+  font-weight: 100
+}

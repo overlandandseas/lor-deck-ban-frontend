@@ -22,9 +22,9 @@
   <Modal @clickedOutside={{this.closeNewDeckModal}}>
     <div class="tc">
     <h2>Add a deck</h2>
-      <Input placeholder="Paste Deck Code Here..." class="code db pa3 w-100 ba br2 b--black-70" @value={{this.deckCode}} type="text"/>
+      <Input placeholder="Paste Deck Code Here..." class="code db pa3 w-100 ba br2 white-80 b--black-50 bg-black-30" @value={{this.deckCode}} type="text"/>
       {{#if (and (eq this.isValidDeck false) this.deckCode)}}
-        <p class="red">Invalid Deck Code</p>
+        <p class="red tracked tl pa2 b">Invalid Deck Code</p>
         {{else}}
         <p> </p>
       {{/if}}
