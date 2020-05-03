@@ -35,7 +35,8 @@ export default class SavedDecksService extends Service {
 
 
   removeDeck(code) {
-    set(this, 'deckCodeList', this.deckCodeList.filter(val => val.deck.code !== code));
+    debugger
+    set(this, 'deckCodeList', this.deckCodeList.filter(val => val.deckCode !== code));
     set(this, 'deckList', this.deckList.filter(val => val.deck.code !== code));
 
     this._saveStorage();
