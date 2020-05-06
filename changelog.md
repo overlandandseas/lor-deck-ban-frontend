@@ -1,5 +1,9 @@
 # Changelog
 
+## 5/5/2020
++ Fixed bug of not being able to delete decks
++ Using https image files for card preview
+
 ## 4/29/2020
 + Removed all unused code
 + Updated Modal UI for viewing decks
