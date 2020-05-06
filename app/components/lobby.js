@@ -157,10 +157,10 @@ export default class Lobby extends Component {
   }
 
   setUserRole(task) {
-    let role = localStorage.getItem(`${this.roomName}:ROLE`);
+    let role = sessionStorage.getItem(`${this.roomName}:ROLE`);
     if (!role) {
       role = task === "NEW_LOBBY" ? "HOST" : "GUEST";
-      localStorage.setItem(`${this.roomName}:ROLE`, role);
+      sessionStorage.setItem(`${this.roomName}:ROLE`, role);
     }
     this.role = role;
   }
