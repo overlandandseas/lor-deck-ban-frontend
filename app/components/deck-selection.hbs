@@ -4,11 +4,11 @@
   <div class="mv3">
   {{#if deck}}
     <div class="flex items-center">
-      <div {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
+      <div role="button" {{on "click" (fn @openViewDeckModal deck.deck deck.name)}}>
         <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
       </div>
       {{#unless @decksSubmitted}}
-      <button class="link white-50 hover-white ml3 bg-dark-mode bn pointer" {{on "click" (fn @removeDeckFromList index)}}>Clear</button>
+      <button type="button" class="link white-50 hover-white ml3 bg-dark-mode bn pointer" {{on "click" (fn @removeDeckFromList index)}}>Clear</button>
       {{/unless}}
     </div>
   {{else}}
@@ -21,13 +21,14 @@
   {{else}}
     {{#if (and this.dragAndDrop.allDecksGood @otherPlayerConnected)}}
       <button
+        type="button"
         {{on "click" @submitDecks}}
         class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline dim pointer"
         >
         Submit Decks
       </button>
       {{else}}
-      <button class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline o-50" disabled="true">
+      <button type="button" class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline o-50" disabled="true">
         Submit Decks
       </button>
     {{/if}}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: runeterra;
-  src: url("/BeaufortforLOL-Regular.woff");
+  src: url('/BeaufortforLOL-Regular.woff');
 }
 
 .runeterra {
@@ -20,31 +20,47 @@
 }
 
 .bg-maroon {
-  background-color: #704055
+  background-color: #704055;
 }
 
 .bg-Demacia {
-  background:  linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(221, 206, 191, 0.15) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(221, 206, 191, 0.15) 100%
+  );
 }
 
 .bg-Ionia {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(207,130,155,0.25) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(207, 130, 155, 0.25) 100%
+  );
 }
 
 .bg-Freljord {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(90,184,218,0.25) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(90, 184, 218, 0.25) 100%
+  );
 }
 
 .bg-Noxus {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(160, 82, 79, 0.25) 100%)
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(160, 82, 79, 0.25) 100%
+  );
 }
 
 .b--Ionia {
-  border-color: rgba(207,130,155,1);
+  border-color: rgba(207, 130, 155, 1);
 }
 
 .Ionia {
-  color: rgba(207,130,155,1);
+  color: rgba(207, 130, 155, 1);
 }
 
 .b--Demacia {
@@ -56,11 +72,11 @@
 }
 
 .b--ShadowIsles {
-  border-color: rgba(59,150,111,1);
+  border-color: rgba(59, 150, 111, 1);
 }
 
 .ShadowIsles {
-  color: rgba(59,150,111,1);
+  color: rgba(59, 150, 111, 1);
 }
 
 .b--Freljord {
@@ -80,19 +96,31 @@
 }
 
 .bg-ShadowIsles {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(59,150,111,0.25) 100%)
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(59, 150, 111, 0.25) 100%
+  );
 }
 
 .bg-PiltoverZaun {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(226, 159, 118, 0.25) 100%)
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(226, 159, 118, 0.25) 100%
+  );
 }
 
 .Bilgewater {
-  color: rgba(180, 86, 58, 1)
+  color: rgba(180, 86, 58, 1);
 }
 
 .bg-Bilgewater {
-  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(180, 86, 58, 0.25) 100%)
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(180, 86, 58, 0.25) 100%
+  );
 }
 
 .w6 {
@@ -100,11 +128,11 @@
 }
 
 .b--PiltoverZaun {
-  border-color: rgba(226, 159, 118, 1)
+  border-color: rgba(226, 159, 118, 1);
 }
 
 .PiltoverZaun {
-  color: rgba(226, 159, 118, 1)
+  color: rgba(226, 159, 118, 1);
 }
 
 .push-left {
@@ -136,12 +164,16 @@
   word-wrap: break-word;
 }
 
-
 .changelog h1,
 .changelog h2,
 .changelog h3,
 .changelog h4,
 .changelog h5,
 .changelog h6 {
-  font-weight: 100
+  font-weight: 100;
+}
+
+.drag {
+  -webkit-user-drag: element;
+  -webkit-user-select: none;
 }

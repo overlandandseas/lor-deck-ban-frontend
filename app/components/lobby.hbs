@@ -28,7 +28,7 @@
 
 
 {{!-- DEBUG MESSAGES --}}
-{{#if debugOn}}
+{{#if this.debugOn}}
   <section class="mt5 code white-60">
     <h4 class=" code pa0 ma0">Debug:</h4>
     {{#each this.messages as |message|}}
@@ -45,6 +45,7 @@
     <DeckList @deck={{this.viewDeck}}/>
     <div class="w-100">
       <button
+        type="button"
         class="bg-dark-mode f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer dim"
         {{on "click" this.closeViewDeckModal}}
       >

@@ -2,7 +2,7 @@
   <h2 class="fw1 tl mt0">Saved Decks </h2>
   {{#each this.savedDecks.deckList as |deck|}}
   <DragZone @deck={{deck}}>
-    <div class="mt3" {{on "click" (fn this.openViewDeckModal deck.deck deck.name)}}>
+    <div role="button" class="mt3" {{on "click" (fn this.openViewDeckModal deck.deck deck.name)}}>
         <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
     </div>
   </DragZone>
@@ -11,7 +11,7 @@
     <p class="mv4 w5 white">-- None -- </p>
   {{/unless}}
   <div class="ph1 mt3">
-    <button class="bg-dark-card dib ba b--maroon ph4 pv3 shadow-4 no-underline shadow-hover br3 white-50 link hover-white" {{on "click" this.openNewDeckModal}}>
+    <button type="button" class="bg-dark-card dib ba b--maroon ph4 pv3 shadow-4 no-underline shadow-hover br3 white-50 link hover-white" {{on "click" this.openNewDeckModal}}>
       + New Deck
     </button>
   </div>
@@ -36,13 +36,13 @@
       </p>
         <DeckList @deck={{this.newDeck}}/>
         <div class="w-100 flex justify-between">
-          <button
+          <button type="button"
             class="f5 dib ba br2 b--black-20 bg-maroon white ph3 pv2 shadow-4 no-underline pointer"
             {{on "click" this.saveDeck}}
           >
             Save
           </button>
-          <button
+          <button type="button"
             class="bg-white f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer"
             {{on "click" this.closeNewDeckModal}}
           >
@@ -59,13 +59,13 @@
     <h3 class="code tracked tc fw1 break-word">{{this.viewDeck.code}}</h3>
     <DeckList @deck={{this.viewDeck}}/>
     <div class="w-100 flex justify-between">
-      <button
+      <button type="button"
         class="bg-dark-mode f5 dib ba br2 b--maroon maroon ph3 pv2 shadow-4 no-underline pointer dim"
         {{on "click" this.closeViewDeckModal}}
       >
         Close
       </button>
-      <button
+      <button type="button"
         class="f5 dib ba b--dark-red bg-dark-card dark-red ph3 pv2 shadow-4 br2 no-underline pointer dim"
         {{on "click" this.removeDeck}}
       >

@@ -3,7 +3,7 @@
     {{on "dragover" this.dragOver}}
     {{on "dragleave" (fn this.dropLeave @idx)}}
     {{on "dragenter" (fn this.dropEnter @idx)}}
-    class="mv3 b--dashed bg-dark-card b--white-50 w5 pa4 {{unless (get this.dragAndDrop.overDropZone @idx) "o-30"}}"
+    class="mv3 b--dashed bg-dark-card b--white-50 w5 pa4 {{if (get this.dragAndDrop.overDropZone @idx) "" "o-30"}}"
     role="button"
 >
  <p class="ma0 pa0 no-pointer">Drag deck from right side</p>

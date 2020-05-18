@@ -1,8 +1,9 @@
 <p class="mt5 ">
 Create room and paste link to opponent to begin banning decks.
 </p>
-<p class="">
-  <table class="">
+<p>
+  <table>
+    <tbody>
     <tr>
       <td class="pa2">
         <label for="numberOfDecks">Number of Decks</label>
@@ -32,9 +33,11 @@ Create room and paste link to opponent to begin banning decks.
         </select>
       </td>
     </tr>
+    </tbody>
   </table>
 <button
-  {{action "createNewRoom"}}
+  type="button"
+  {{on "click" this.createNewRoom}}
   class="mv3 br3 f5 dib ba b--black-60 bg-maroon white ph4 pv3 shadow-4 no-underline pointer dim">
   Create new room
 </button>
