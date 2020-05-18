@@ -1,5 +1,9 @@
 # Changelog
 
+## 5/18/2020
+
+- Fixed bug where card counts were sometimes shown incorrectly
+
 ## 5/17/2020
 
 - Added integration tests for ban selection component
