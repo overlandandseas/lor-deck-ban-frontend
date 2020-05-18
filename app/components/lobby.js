@@ -67,6 +67,7 @@ export default class Lobby extends Component {
     this.isViewDeckModalOpen = false;
     this.viewDeck = null;
     this.viewDeckName = "";
+    console.log("closed view deck modal");
   }
 
   @action
@@ -100,6 +101,7 @@ export default class Lobby extends Component {
     console.log(`Connected event has been called: ${event}`);
     this.ping();
   }
+
 
   onMessage({ data }) {
     this.messages = [...this.messages, `In: ${data}`];

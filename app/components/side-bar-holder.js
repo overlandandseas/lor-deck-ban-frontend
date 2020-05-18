@@ -34,7 +34,7 @@ export default class DeckThumbnail extends Component {
     if (this.deckCode) {
       try {
         deckObj = new Deck(this.deckCode)
-      } catch (e) {}
+      } catch (_) {}
     }
     return deckObj;
   }
