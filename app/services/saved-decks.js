@@ -8,7 +8,7 @@ export default class SavedDecksService extends Service {
   constructor() {
     super(...arguments);
 
-    const storageItem = localStorage.getItem("deckCodeList")
+    const storageItem = localStorage.getItem('deckCodeList')
 
     if (storageItem) {
       this.deckCodeList = JSON.parse(storageItem);
@@ -43,6 +43,6 @@ export default class SavedDecksService extends Service {
 
 
   _saveStorage() {
-    localStorage.setItem("deckCodeList", JSON.stringify(this.deckCodeList))
+    localStorage.setItem('deckCodeList', JSON.stringify(this.deckCodeList))
   }
 }

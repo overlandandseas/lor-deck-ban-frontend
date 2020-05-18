@@ -1,12 +1,12 @@
-import Component from "@glimmer/component";
-import config from "../config/environment";
-import { inject } from "@ember/service";
-import { action } from "@ember/object";
-import { tracked } from "@glimmer/tracking";
+import Component from '@glimmer/component';
+import config from '../config/environment';
+import { inject } from '@ember/service';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
 
-import Deck from 'lor-card-ban-frontend/utils/Deck'
+import Deck from 'lor-card-ban-frontend/utils/Deck';
 
-const DELIMITER = ";";
+const DELIMITER = ';';
 
 export default class Lobby extends Component {
   @inject websockets;
@@ -34,7 +34,6 @@ export default class Lobby extends Component {
   @tracked viewDeckName;
   @tracked isViewDeckModalOpen = false;
 
-
   constructor(_, { roomName }) {
     super(...arguments);
     this.roomName = roomName;
@@ -42,9 +41,9 @@ export default class Lobby extends Component {
       `${config.WS_URL}websocket/${roomName}`
     );
 
-    socket.on("open", this.onOpen, this);
-    socket.on("message", this.onMessage, this);
-    socket.on("close", this.onClose, this);
+    socket.on('open', this.onOpen, this);
+    socket.on('message', this.onMessage, this);
+    socket.on('close', this.onClose, this);
 
     this.socketRef = socket;
   }
@@ -63,22 +62,21 @@ export default class Lobby extends Component {
   }
 
   @action
-  closeViewDeckModal(deck, deckName) {
+  closeViewDeckModal() {
     this.isViewDeckModalOpen = false;
     this.viewDeck = null;
-    this.viewDeckName = "";
-    console.log("closed view deck modal");
+    this.viewDeckName = '';
+    console.log('closed view deck modal');
   }
 
   @action
   submitDecks() {
-    const codeString = this.dragAndDrop.deckArray
-      .map((val) => {
-        return {
-          name: val.name,
-          code: val.deck.code,
-        };
-      });
+    const codeString = this.dragAndDrop.deckArray.map(val => {
+      return {
+        name: val.name,
+        code: val.deck.code
+      };
+    });
 
     this.send(`DECK_SUBMIT;${this.role};${JSON.stringify(codeString)}`);
     this.decksSubmitted = true;
@@ -87,8 +85,8 @@ export default class Lobby extends Component {
   @action
   submitBans() {
     const banString = this.opponentDecks.reduce((acc, val, index) => {
-      if (val.isBanned){
-        acc.push(index)
+      if (val.isBanned) {
+        acc.push(index);
       }
       return acc;
     }, []);
@@ -102,7 +100,6 @@ export default class Lobby extends Component {
     this.ping();
   }
 
-
   onMessage({ data }) {
     this.messages = [...this.messages, `In: ${data}`];
     this.messageController(data);
@@ -113,7 +110,7 @@ export default class Lobby extends Component {
   }
 
   ping() {
-    this.send("PING");
+    this.send('PING');
     setTimeout(this.ping.bind(this), 10000);
   }
 
@@ -127,20 +124,20 @@ export default class Lobby extends Component {
     const [task, ...data] = message.split(DELIMITER);
 
     // Set Host or Guest
-    if (task === "NEW_LOBBY" || task === "LOBBY_FOUND") {
+    if (task === 'NEW_LOBBY' || task === 'LOBBY_FOUND') {
       // new lobby
       this.setUserRole(task);
-    } else if (task === "ROOM_INFO") {
+    } else if (task === 'ROOM_INFO') {
       // info about room
       this.setupRoomOptions(data);
-    } else if (task === "CONNECTED") {
+    } else if (task === 'CONNECTED') {
       // number of players connected or disconnected
       this.otherPlayerConnected = Number(data) === 2;
-    } else if (task === "DECK_SUBMITTED") {
+    } else if (task === 'DECK_SUBMITTED') {
       this.handleDeckSubmitted(data[0]);
-    } else if (task === "DECKS") {
+    } else if (task === 'DECKS') {
       this.handleDecks(data);
-    } else if (task === "BANNED") {
+    } else if (task === 'BANNED') {
       this.handleBans(data);
     }
   }
@@ -161,7 +158,7 @@ export default class Lobby extends Component {
   setUserRole(task) {
     let role = sessionStorage.getItem(`${this.roomName}:ROLE`);
     if (!role) {
-      role = task === "NEW_LOBBY" ? "HOST" : "GUEST";
+      role = task === 'NEW_LOBBY' ? 'HOST' : 'GUEST';
       sessionStorage.setItem(`${this.roomName}:ROLE`, role);
     }
     this.role = role;
@@ -174,20 +171,19 @@ export default class Lobby extends Component {
   }
 
   handleDecks(data) {
-
     if (data[0] === this.role) {
       this.yourDecks = JSON.parse(data[1]).map(val => {
         return {
           name: val.name,
           deck: new Deck(val.code)
-        }
-      })
+        };
+      });
     } else {
       this.opponentDecks = JSON.parse(data[1]).map(val => {
         return {
           name: val.name,
           deck: new Deck(val.code)
-        }
+        };
       });
     }
 
@@ -195,21 +191,23 @@ export default class Lobby extends Component {
       this.showDeckSelection = false;
       this.showBanSelection = true;
     }
-
   }
 
-  handleBans(data){
+  handleBans(data) {
     if (data[0] !== this.role) {
       const banArray = JSON.parse(data[1]);
 
-      this.yourDecks = this.yourDecks.map(({name, deck}, index) => {
+      this.yourDecks = this.yourDecks.map(({ name, deck }, index) => {
         return {
           name,
           deck,
           isBanned: banArray.includes(index)
-        }
+        };
       });
-      this.opponentBans = this.yourDecks.filter( i => i.isBanned).map(i => i.name).join(', ')
+      this.opponentBans = this.yourDecks
+        .filter(i => i.isBanned)
+        .map(i => i.name)
+        .join(', ');
     }
   }
 }

@@ -1,5 +1,5 @@
 import Service from '@ember/service';
-import { tracked } from "@glimmer/tracking";
+import { tracked } from '@glimmer/tracking';
 import { A } from '@ember/array';
 import { computed } from '@ember/object';
 
@@ -30,7 +30,7 @@ export default class DragAndDropService extends Service {
 
   dragOver(dragEvent) {
     dragEvent.preventDefault();
-    dragEvent.dataTransfer.dropEffect = "move";
+    dragEvent.dataTransfer.dropEffect = 'move';
   }
 
   dropLeave(index) {

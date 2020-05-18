@@ -1,8 +1,8 @@
-import Component from "@glimmer/component";
-import { tracked } from "@glimmer/tracking";
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 
 export default class WaitingDots extends Component {
-  @tracked dots = ".";
+  @tracked dots = '.';
 
   constructor() {
     super(...arguments);
@@ -11,8 +11,8 @@ export default class WaitingDots extends Component {
   }
 
   addOrResetDots() {
-    if (this.dots === "...") {
-      this.dots = ".";
+    if (this.dots === '...') {
+      this.dots = '.';
     } else {
       this.dots = `${this.dots}.`;
     }

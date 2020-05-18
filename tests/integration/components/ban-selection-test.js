@@ -8,7 +8,7 @@ import sinon from 'sinon';
 module('Integration | Component | ban-selection', function(hooks) {
   setupRenderingTest(hooks);
 
-  hooks.beforeEach(async function(assert) {
+  hooks.beforeEach(async function() {
     this.setProperties({
       yourDecks: decks(
         'CEBACAIBEADACBAGBAMTINJ2AIBACBA2DMCQCAIEA4TSUMQCAIAQCAIUAMAQIAI7GE',

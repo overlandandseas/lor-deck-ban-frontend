@@ -14,11 +14,11 @@ export default modifier((element, [callback]) => {
 }
 
 
-  document.addEventListener("click", handleClick);
-  document.addEventListener("keydown", handleKeyDownEvent);
+  document.addEventListener('click', handleClick);
+  document.addEventListener('keydown', handleKeyDownEvent);
 
   return () => {
-    document.removeEventListener("click", handleClick)
-    document.removeEventListener("keydown", handleKeyDownEvent);
+    document.removeEventListener('click', handleClick)
+    document.removeEventListener('keydown', handleKeyDownEvent);
   }
 });

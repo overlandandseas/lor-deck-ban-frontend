@@ -1,25 +1,22 @@
-import Component from "@glimmer/component";
-import { action } from "@ember/object";
-import { inject } from "@ember/service";
-import config from "../config/environment";
-import { tracked } from "@glimmer/tracking";
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+import { inject } from '@ember/service';
+import config from '../config/environment';
+import { tracked } from '@glimmer/tracking';
 
 export default class Main extends Component {
   @inject router;
 
-
-
   @tracked numberOfDecks = 3;
 
-  @tracked numberOfBans = 1;;
+  @tracked numberOfBans = 1;
 
-  @tracked banOptions = [1,2];
-
+  @tracked banOptions = [1, 2];
 
   @action
   onNumberOfDecksChange(evt) {
     let options = [];
-    for(let c = 1; c < evt.target.value; c++) {
+    for (let c = 1; c < evt.target.value; c++) {
       options.push(c);
     }
 
@@ -33,19 +30,16 @@ export default class Main extends Component {
     this.numberOfBans = evt.target.value;
   }
 
-
-
   @action
-  async createNewRoom(person) {
-
+  async createNewRoom() {
     const resp = await fetch(config.API_URL, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
         numberOfDecks: this.numberOfDecks,
         numberOfBans: this.numberOfBans
       })
     });
     const roomName = await resp.text();
-    this.router.transitionTo("room", roomName);
+    this.router.transitionTo('room', roomName);
   }
 }

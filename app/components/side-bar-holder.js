@@ -1,17 +1,12 @@
-import Component from "@glimmer/component";
-import { tracked } from "@glimmer/tracking";
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 import { computed } from '@ember/object';
-import { action } from "@ember/object";
-import Deck from 'lor-card-ban-frontend/utils/Deck'
-import { DeckEncoder } from 'runeterra'
+import { action } from '@ember/object';
+import Deck from 'lor-card-ban-frontend/utils/Deck';
+import { DeckEncoder } from 'runeterra';
 import { inject } from '@ember/service';
 
-
-
 export default class DeckThumbnail extends Component {
-
-
-
   @inject('saved-decks') savedDecks;
 
   @tracked isNewDeckModalOpen = false;
@@ -26,24 +21,24 @@ export default class DeckThumbnail extends Component {
 
   @tracked viewDeckName;
 
-
   @computed('deckCode')
   get newDeck() {
     let deckObj;
 
     if (this.deckCode) {
       try {
-        deckObj = new Deck(this.deckCode)
-      } catch (_) {}
+        deckObj = new Deck(this.deckCode);
+      } catch (_) {
+        // noop
+      }
     }
     return deckObj;
   }
 
-
   @computed('deckCode', 'newDeck')
   get isValidDeck() {
     if (!this.newDeck || !this.deckCode) {
-      return false
+      return false;
     }
 
     return DeckEncoder.isValidDeck(this.newDeck.decodedDeck);
@@ -51,10 +46,9 @@ export default class DeckThumbnail extends Component {
 
   @action
   openNewDeckModal(evt) {
-    evt.stopPropagation()
-    this.isNewDeckModalOpen = true
+    evt.stopPropagation();
+    this.isNewDeckModalOpen = true;
   }
-
 
   @action
   closeNewDeckModal() {
@@ -63,11 +57,10 @@ export default class DeckThumbnail extends Component {
     this.isNewDeckModalOpen = false;
   }
 
-
   @action
   saveDeck() {
-    if(!this.newDeckName) {
-      this.newDeckName = `${this.newDeck.regions.join(' / ')} Deck`
+    if (!this.newDeckName) {
+      this.newDeckName = `${this.newDeck.regions.join(' / ')} Deck`;
     }
     this.savedDecks.saveDeck(this.newDeck, this.newDeckName);
     this.deckCode = '';
@@ -77,14 +70,14 @@ export default class DeckThumbnail extends Component {
 
   @action
   openViewDeckModal(deck, deckName, evt) {
-    evt.stopPropagation()
+    evt.stopPropagation();
     this.isViewDeckModalOpen = true;
     this.viewDeck = deck;
     this.viewDeckName = deckName;
   }
 
   @action
-  closeViewDeckModal(deck, deckName) {
+  closeViewDeckModal() {
     this.isViewDeckModalOpen = false;
     this.viewDeck = null;
     this.viewDeckName = '';
@@ -92,12 +85,15 @@ export default class DeckThumbnail extends Component {
 
   @action
   removeDeck() {
-    if (window.confirm(`Are you sure you want to remove deck: ${this.viewDeckName}?`)) {
+    if (
+      window.confirm(
+        `Are you sure you want to remove deck: ${this.viewDeckName}?`
+      )
+    ) {
       this.savedDecks.removeDeck(this.viewDeck.code);
       this.isViewDeckModalOpen = false;
       this.viewDeck = null;
       this.viewDeckName = '';
     }
   }
-
 }
