@@ -1,5 +1,9 @@
 # Changelog
 
+## 5/25/2020
+
+- Updated cards for patch 1.2
+
 ## 5/18/2020
 
 - Fixed bug where card counts were sometimes shown incorrectly
