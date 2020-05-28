@@ -19,14 +19,6 @@ function mapOverDropZone(touchX, touchY) {
 
 function addDropZone(id, element) {
   dropZones[id] = element;
-  // console.log('added', id);
-  // console.log('zone', dropZones);
 }
 
-function removeDropZone(id) {
-  // delete dropZones[id];
-  // console.log('removed', id);
-  // console.log('zone', dropZones);
-}
-
-export { mapOverDropZone, addDropZone, removeDropZone };
+export { mapOverDropZone, addDropZone };
