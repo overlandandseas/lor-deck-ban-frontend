@@ -14,7 +14,6 @@ export default class OnTouchmoveModifier extends Modifier {
     const found = mapOverDropZone(touch.pageX, touch.pageY);
     found.forEach(val => {
       if (val.found) {
-        console.log('found', val.index, this.dragAndDrop.overDropZone);
         this.dragAndDrop.dropEnter(val.index);
       } else {
         this.dragAndDrop.dropLeave(val.index);
@@ -36,10 +35,8 @@ export default class OnTouchmoveModifier extends Modifier {
   @action
   handleTouchend(event) {
     const lastFoundIndex = this.dragAndDrop.overDropZone.findIndex(i => i);
-    console.log('drop', lastFoundIndex);
     if (lastFoundIndex !== -1) {
       this.dragAndDrop.dropItem(event, lastFoundIndex);
-      console.log('dropped', this.dragAndDrop.overDropZone);
     }
 
     this.element.parentElement.removeChild(this.clone);

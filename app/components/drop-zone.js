@@ -24,9 +24,4 @@ export default class DropZone extends Component {
   dropEnter(idx) {
     this.dragAndDrop.dropEnter(idx);
   }
-
-  @action
-  touchevent(evt) {
-    console.log('touchevent', evt);
-  }
 }

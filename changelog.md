@@ -1,5 +1,9 @@
 # Changelog
 
+## 5/27/2020
+
+- Adding mobile touch screen support (experimental)
+
 ## 5/25/2020
 
 - Updated cards for patch 1.2
