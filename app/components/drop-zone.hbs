@@ -3,8 +3,10 @@
     {{on "dragover" this.dragOver}}
     {{on "dragleave" (fn this.dropLeave @idx)}}
     {{on "dragenter" (fn this.dropEnter @idx)}}
+    {{add-dropzone @idx}}
     class="mv3 b--dashed bg-dark-card b--white-50 w5 pa4 {{if (get this.dragAndDrop.overDropZone @idx) "" "o-30"}}"
     role="button"
+    data-index={{@idx}}
 >
  <p class="ma0 pa0 no-pointer">Drag deck from right side</p>
 </div>

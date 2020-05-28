@@ -1,3 +1,3 @@
-<div draggable="true" role="button" {{on "dragstart" this.dragHasStarted}}  class="drag">
+<div draggable="true" role="button" {{on "dragstart" this.dragHasStarted}} {{on-touchmove this.dragHasStarted}}  class="drag">
   {{yield}}
 </div>
