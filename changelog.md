@@ -1,5 +1,9 @@
 # Changelog
 
+## 8/26/2020
+- Added Targon set
+- Updated sets to 1.8
+
 ## 5/27/2020
 
 - Adding mobile touch screen support (experimental)

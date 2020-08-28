@@ -1,6 +1,7 @@
 import { DeckEncoder } from 'runeterra';
 import set1 from 'lor-card-ban-frontend/fixtures/set1-en_us';
 import set2 from 'lor-card-ban-frontend/fixtures/set2-en_us';
+import set3 from 'lor-card-ban-frontend/fixtures/set3-en_us';
 import { set } from '@ember/object';
 
 const DATA_MAP = {};
@@ -10,6 +11,10 @@ set1.forEach(card => {
 });
 
 set2.forEach(card => {
+  DATA_MAP[card.cardCode] = card;
+});
+
+set3.forEach(card => {
   DATA_MAP[card.cardCode] = card;
 });
 

@@ -123,6 +123,18 @@
   );
 }
 
+.Targon {
+  color: rgba(74, 67, 153, 1);
+}
+
+.bg-Targon {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(74, 67, 153, 0.25) 100%
+  );
+}
+
 .w6 {
   width: 275px;
 }

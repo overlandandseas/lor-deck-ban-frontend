@@ -1,5 +1,4 @@
 import { modifier } from 'ember-modifier';
-import { inject } from '@ember/service';
 
 export default modifier((element, [callback]) => {
   function handleClick(event) {
