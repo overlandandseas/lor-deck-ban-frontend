@@ -23,6 +23,7 @@ export default class Deck {
     this.spells = [];
     this.followers = [];
     this.champions = [];
+    this.landmarks = [];
     this.cards = [];
     this.regionsObj = {};
 
@@ -53,6 +54,11 @@ export default class Deck {
         } else {
           this.followers.push(cardObj);
         }
+      }
+
+      // Landmarks
+      if (cardObj.type === 'Landmark') {
+        this.landmarks.push(cardObj);
       }
     });
 

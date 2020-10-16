@@ -1,5 +1,9 @@
 # Changelog
 
+## 10/16/2020
+- Added support for landmarks
+- Updated sets to 1.11
+
 ## 8/26/2020
 - Added Targon set
 - Updated sets to 1.8
