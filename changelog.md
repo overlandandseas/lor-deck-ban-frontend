@@ -1,5 +1,8 @@
 # Changelog
 
+## 1/3/2021
+- Added new set 3 cards
+
 ## 10/16/2020
 - Added support for landmarks
 - Updated sets to 1.11
