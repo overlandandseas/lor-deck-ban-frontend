@@ -28,4 +28,4 @@ jobs:
       - name: GitHub Action for Ember Testing
       # You may pin to the exact commit or the version.
       # uses: alexlafroscia/actions-ember-testing@72186ec7fbe1a733710786b07995c3fd9cbfcd61
-      uses: alexlafroscia/actions-ember-testing@v1.0.0
+        uses: alexlafroscia/actions-ember-testing@v1.0.0
