@@ -136,7 +136,7 @@ module('Integration | Component | ban-selection', function(hooks) {
 
     await click('[data-test-ban-label][for="opponent-deck-1"]');
     assert.dom('[data-test-submit-button__no-valid-bans]').doesNotExist();
-    assert.dom('[data-test-submit-button__valid]').exists();
+    assert.dom('[data-test-submit-button__valid]').doesNotExist();
   });
 });
 
