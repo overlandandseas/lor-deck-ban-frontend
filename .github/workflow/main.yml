@@ -1,15 +1,21 @@
-name: Build and Test
+name: Ember CI
 
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+on: [push]
 
 jobs:
-  build:
+  test:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: GitHub Action for Ember Testing
-      uses: alexlafroscia/actions-ember-testing@v1.0.0
+    - uses: actions/checkout@v1
+    - uses: rwjblue/setup-volta@v1
+    - uses: mydea/actions-ember-testing@v2
+    - name: Install dependencies
+      run: yarn install
+    - name: Run tests
+      run: yarn test
+    - name: Lint JS
+      run: yarn lint:js
+    - name: Lint HBS
+      run: yarn lint:hbs
