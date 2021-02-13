@@ -1,5 +1,8 @@
 # Changelog
 
+## 2/13/2021
+- Updated sets to Aphelios Bundle
+
 ## 1/3/2021
 - Added new set 3 cards
 
