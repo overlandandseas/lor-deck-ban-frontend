@@ -135,6 +135,18 @@
   );
 }
 
+.Shurima {
+  color: rgba(238, 174, 43, 1);
+}
+
+.bg-Shurima {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(238, 174, 43, 0.25) 100%
+  );
+}
+
 .w6 {
   width: 275px;
 }

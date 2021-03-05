@@ -1,5 +1,8 @@
 # Changelog
 
+## 3/5/2021
+- Added Shurima Bundle
+
 ## 2/13/2021
 - Updated sets to Aphelios Bundle
 
