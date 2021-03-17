@@ -189,3 +189,107 @@
   -webkit-user-drag: element;
   -webkit-user-select: none;
 }
+
+.Shurima {
+  color: rgba(238, 174, 43, 1);
+}
+
+.bg-Shurima {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(238, 174, 43, 0.25) 100%
+  );
+}
+
+.transition-transform {
+  transition: transform 0.5s ease-in;
+}
+.transform-off {
+  transform: translate3d( 100%, 0, 0 );
+}
+
+@media screen and (min-width: 30em) {
+ .transform-off {
+   transform: none;
+  }
+
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.waiting {
+  background: linear-gradient(to right, gold, yellow);
+}
+
+.connected {
+  background: linear-gradient(to right, green, greenyellow);
+}
+
+.bans {
+  background: linear-gradient(to right, red, crimson);
+}
+
+.decks {
+  background: linear-gradient(to right, cyan, cornflowerblue);
+}
+
+.outer-circle {
+  width: 64px;
+  height: 64px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+  border-width: 0px;
+  animation: rotateCircle 1s linear infinite;
+  padding: 2px;
+  display: table;
+}
+
+.inner-circle {
+  background-color: #1e1e2f;
+  height: 64px;
+  width: 64px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+  border-width: 0px;
+  animation: rotateCircle 1s linear infinite reverse;
+  display: table;
+  text-align: center;
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .min-h-auto-l {
+    min-height: auto;
+  }
+
+}

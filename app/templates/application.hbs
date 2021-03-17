@@ -1,17 +1,7 @@
-<B/>
-<div class="flex justify-between w-100 bg-black-20 white bb bw1 b--black-40">
-  <div class=" flex items-center pa3">
-    <img src="/images/LoR-small.svg" class="db h2 w2" alt="Legends of Runeterra"/>
-    <LinkTo class="dib link f4 ml3 runeterra white" @route="index">Runeterraban</LinkTo>
-  </div>
-    <div class="flex items-center">
-    <LinkTo @route="about" class="f4 runeterra pa3 db bl bw1 b--black-40 link white h-100 lh-copy hover-bg-black-40 bg-animate">about</LinkTo>
-  <LinkTo @route="updates" class="f4 runeterra pa3 db link white bl bw1 b--black-40 h-100 lh-copy hover-bg-black-40 bg-animate">updates</LinkTo>
-    </div>
-</div>
+<Navigation />
 <div class="mw9 center">
-  <SideBarHolder />
-  <section class="ma5">
+  <!-- <SideBarHolder /> -->
+  <section class="ma3 ma5-ns">
     {{outlet}}
   </section>
 </div>

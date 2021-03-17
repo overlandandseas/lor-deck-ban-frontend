@@ -1,0 +1,19 @@
+{{#if this.showSubmitDeckButton}}
+  <button class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link pointer dim">
+    Submit Decks
+  </button>
+{{else}}
+  <button
+    {{on "click" this.onOpenSelectDeckModal}}
+    class="db w-100 white-80 bg-dark-mode ba b--white-20 br-pill tc pa3 code link pointer dim"
+  >
+    + Add deck ({{@playerDecks.length}}/{{this.playerRoomState.numberOfDecks}})
+  </button>
+{{/if}}
+
+{{#if this.showSelectDeckModal}}
+  <SelectDeckModal
+    @dismissModal={{this.oncloseSelectDeckModal}}
+    @selectDeck={{this.selectDeck}}
+  />
+{{/if}}

@@ -1,0 +1,13 @@
+<div class="w-100 w5-ns white-50 link pointer pa3 shadow-4 hover-white">
+  <div class="flex">
+  {{#each @deck.regions as |region|}}
+    <img class="db w2 h2 no-pointer" src="/images/{{region}}.png" alt={{region}}/>
+  {{/each}}
+  </div>
+  <hr class="b--white-20">
+  {{#if @name}}
+    <p class="truncate ma0 pa0 tl">{{@name}}</p>
+  {{else}}
+    <p class="truncate ma0 pa0 tl">{{@deck.code}}</p>
+  {{/if}}
+</div>

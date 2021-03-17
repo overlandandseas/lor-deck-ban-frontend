@@ -1,5 +1,16 @@
-<section class="absolute absolute--fill bg-black-30">
-  <div class="center mt4-l mw8-l ma0 bg-dark-card pa3 ba b--black-40 shadow-1 br2" {{on-click-outside @clickedOutside}}>
-    {{yield}}
+<section class="z-1 absolute absolute--fill bg-black-40" >
+  <div
+    class="bg-dark-card ba b--black-40 shadow-1 br2 min-vh-100 min-h-auto-l mt5-l mw8-l center pb4"
+    {{on-click-outside @dismissModal}}
+  >
+    <div class="tr pv2 ph3 bg-dark-mode bb bw1 b--black-20 flex justify-between">
+      <h3 class="code fw3 word-nowrap">{{@title}}</h3>
+      <button alt="close" class="pointer dim bg-dark-mode bn db" {{on "click" @dismissModal}}>
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#cccccc" clip-rule="evenodd"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
+      </button>
+    </div>
+    <section class="mh3 mh4-l pt3">
+      {{yield}}
+    </section>
   </div>
 </section>

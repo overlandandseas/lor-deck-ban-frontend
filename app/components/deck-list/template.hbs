@@ -7,10 +7,10 @@
         {{#each @deck.champions as |card|}}
         <li role="button" class="pv2 bn br3 ma1 flex justify-between items-center bg-{{card.regionRef}}" {{on "mouseenter" (fn (mut card.visible) true)}} {{on "mouseleave" (fn (mut card.visible) false)}}>
           {{#if card.visible}}
-            <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db absolute w5 fl push-right" alt="{{card.name}}"/>
+            <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-right" alt="{{card.name}}"/>
           {{/if}}
                 <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-          <img class="db ml3" src="images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+          <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
         </li>
         {{/each}}
       </ul>
@@ -23,10 +23,10 @@
         {{#each @deck.landmarks as |card|}}
         <li role="button" class="pv2 bn br3 ma1 flex justify-between items-center bg-{{card.regionRef}}" {{on "mouseenter" (fn (mut card.visible) true)}} {{on "mouseleave" (fn (mut card.visible) false)}}>
           {{#if card.visible}}
-            <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db absolute w5 fl push-right" alt="{{card.name}}"/>
+            <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-right" alt="{{card.name}}"/>
           {{/if}}
                 <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-          <img class="db ml3" src="images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+          <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
         </li>
         {{/each}}
       </ul>
@@ -40,10 +40,10 @@
     {{#each @deck.followers as |card|}}
     <li role="button" class="pv2 bn br3 ma1 flex justify-between items-center bg-{{card.regionRef}}" {{on "mouseenter" (fn (mut card.visible) true)}} {{on "mouseleave" (fn (mut card.visible) false)}}>
       {{#if card.visible}}
-        <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="db absolute w5 fl push-left" alt="{{card.name}}"/>
+        <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-left" alt="{{card.name}}"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db ml3" src="images/{{card.regionRef}}.png" width="32px" height="auto"  alt={{card.region}}/>
+      <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto"  alt={{card.region}}/>
     </li>
     {{/each}}
   </ul>
@@ -56,10 +56,10 @@
     {{#each @deck.spells as |card|}}
     <li role="button" class="pv2 bn br3 ma1 flex justify-between items-center bg-{{card.regionRef}}" {{on "mouseenter" (fn (mut card.visible) true)}} {{on "mouseleave" (fn (mut card.visible) false)}}>
       {{#if card.visible}}
-        <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="db absolute w5 fl push-left" alt="{{card.name}}"/>
+        <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-left" alt="{{card.name}}"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db ml3" src="images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+      <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
     </li>
     {{/each}}
   </ul>

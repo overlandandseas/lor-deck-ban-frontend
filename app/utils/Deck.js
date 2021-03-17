@@ -2,6 +2,7 @@ import { DeckEncoder } from 'runeterra';
 import set1 from 'lor-card-ban-frontend/fixtures/set1-en_us';
 import set2 from 'lor-card-ban-frontend/fixtures/set2-en_us';
 import set3 from 'lor-card-ban-frontend/fixtures/set3-en_us';
+import set4 from 'lor-card-ban-frontend/fixtures/set4-en_us';
 import { set } from '@ember/object';
 
 const DATA_MAP = {};
@@ -18,6 +19,10 @@ set3.forEach(card => {
   DATA_MAP[card.cardCode] = card;
 });
 
+set4.forEach(card => {
+  DATA_MAP[card.cardCode] = card;
+});
+
 export default class Deck {
   constructor(deckCode) {
     this.spells = [];
@@ -25,6 +30,7 @@ export default class Deck {
     this.champions = [];
     this.landmarks = [];
     this.cards = [];
+    this.regions = [];
     this.regionsObj = {};
 
     this.code = deckCode;

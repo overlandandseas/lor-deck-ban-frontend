@@ -13,6 +13,12 @@ export default class Main extends Component {
 
   @tracked banOptions = [1, 2];
 
+  selectionItems = [
+    'English',
+    'Türk',
+    '日本語',
+  ];
+
   @action
   onNumberOfDecksChange(evt) {
     let options = [];

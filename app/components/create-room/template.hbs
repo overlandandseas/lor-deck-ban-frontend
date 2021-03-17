@@ -1,0 +1,40 @@
+<p class="code f4 fw3 mv3">Create Room</p>
+<table class="code">
+  <tbody>
+  <tr>
+    <td class="pr2">
+      <label for="numberOfDecks">Number of Decks</label>
+    </td>
+    <td class="pb3">
+      <select class="pa2 bg-dark-card white bn" id="numberOfDecks" {{on "change" this.onNumberOfDecksChange}}>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="pr2">
+      <label for="numberOfBans">Number of Bans</label>
+    </td>
+    <td class="pv2">
+      <select class="pa2 bg-dark-card white bn" id="numberOfBans" {{on "change" this.onNumberOfBansChange}} value={{this.numberOfBans}}>
+        {{#each this.banOptions as |banOption|}}
+          <option value={{banOption}} >{{banOption}}</option>
+        {{/each}}
+      </select>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<button
+  type="button"
+  {{on "click" this.createNewRoom}}
+  class="code mv3 br-pill f5 dib ba b--white-20 white-80 bg-dark-mode ph4 pv3 no-underline pointer dim">
+  Create new room
+</button>
