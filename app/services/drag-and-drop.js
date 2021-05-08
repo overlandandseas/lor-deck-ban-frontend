@@ -5,27 +5,14 @@ import { computed } from '@ember/object';
 
 
 export default class DragAndDropService extends Service {
-
-
   @tracked overDropZone = A([]);
 
-  @tracked deckArray = [];
-
   @tracked banArray;
-
-  @computed('deckArray')
-  get allDecksGood() {
-    const codeSet = new Set(this.deckArray.map(val => val && val.deck.code));
-    return codeSet.size === this.deckArray.length;
-  }
 
   dropItem(dragEvent, index) {
     dragEvent.preventDefault();
     this.overDropZone[index] = false;
     this.overDropZone = [...this.overDropZone];
-
-    this.deckArray[index] = this.deck;
-    this.deckArray = [...this.deckArray];
   }
 
   dragOver(dragEvent) {

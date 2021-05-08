@@ -29,8 +29,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.API_URL = 'http://localhost:7000/';
-    ENV.WS_URL = 'ws://localhost:7000/';
+    ENV.API_URL = 'http://localhost:7000';
+    ENV.WS_URL = 'ws://localhost:7000';
   }
 
   if (environment === 'test') {
@@ -47,8 +47,8 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.API_URL = 'https://lor-deck-ban-backend.herokuapp.com/';
-    ENV.WS_URL = 'wss://lor-deck-ban-backend.herokuapp.com/';
+    ENV.API_URL = 'https://lor-deck-ban-backend.herokuapp.com';
+    ENV.WS_URL = 'wss://lor-deck-ban-backend.herokuapp.com';
   }
 
   return ENV;

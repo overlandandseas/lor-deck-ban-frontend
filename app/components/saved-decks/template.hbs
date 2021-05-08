@@ -1,0 +1,78 @@
+<section class="ma5">
+
+  <p class="code f4 fw3 mv3">Saved Decks</p>
+  {{#each this.savedDecks.deckList as |deckObj|}}
+  <div class="mv3">
+
+    <DragZone @deck={{deckObj}}>
+      <button
+        class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
+        {{on "click" (fn this.showFullDeckList deckObj)}}
+        >
+        <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+      </button>
+    </DragZone>
+  </div>
+  {{/each}}
+
+  <button
+    type="button"
+    {{on "click" this.openNewDeckModal}}
+    class="code mv3 br-pill f5 dib ba b--white-20 white-80 bg-dark-mode ph4 pv3 no-underline pointer dim">
+    + Add new deck
+  </button>
+
+</section>
+
+
+{{#if this.isNewDeckModalOpen}}
+  <Modal
+    @dismissModal={{this.closeNewDeckModal}}
+    @title="Add new deck"
+    >
+    <label class="db mt3 mb1 code">Deck Code</label>
+    <div class="flex items-center">
+      <Input
+        @type="text"
+        @value={{this.pastedDeckCode}}
+        class="code db pa3 w-100 ba white-80 b--black-50 bg-black-30"
+        {{on "input" this.verifyDeckCode}}
+        placeholder="Paste deckcode.."/>
+    </div>
+    {{#if this.isValidDeckCode}}
+      <label class="db mt3 mb1 code">Name Deck</label>
+      <div class="flex items-center mb3">
+        <Input
+        @type="text"
+        @value={{this.deckName}}
+        class="code db pa3 w-100 ba white-80 b--black-50 bg-black-30"
+        />
+        <div
+        class="bg-dark-card pa2 white bn db ml3 o-50 glow pointer"
+        role="button"
+        {{on "click" this.saveDeck}}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#19a974" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+      </div>
+    </div>
+      <DeckList @deck={{this.spotlightDeck}}/>
+    {{/if}}
+    <p class="{{if (eq this.isValidDeckCode false) 'o-100' 'o-0' }} mt3 mb0 red code">Please enter a valid deck code or mobalytics link</p>
+
+  </Modal>
+{{/if}}
+
+
+{{#if this.isFullDeckModalOpen}}
+  <Modal
+    @dismissModal={{this.closeFullDeckModal}}
+    @title={{this.spotlightDeck.name}}
+    >
+    <DeckList @deck={{this.spotlightDeck.deck}}/>
+    <button
+      type="button"
+      {{on "click" this.deleteDeck}}
+      class="code mv2 br-pill f6 dib ba b--dark-red red bg-dark-card ph3 pv2 no-underline pointer dim">
+      Delete deck
+    </button>
+  </Modal>
+{{/if}}

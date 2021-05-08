@@ -1,0 +1,56 @@
+<Modal @dismissModal={{@dismissModal}} @title="Select Deck">
+
+  {{#if this.showFullDeckList}}
+    <button
+      class="maroon code bg-dark-card bn white-80 pointer dim mb3 f6 pa0"
+      {{on "click" this.onCloseFullDeckList}}
+    >&lt; back to deck selection</button>
+    <h3 class="fw3 code mv2">{{this.spotlightDeck.name}}</h3>
+    <DeckList @deck={{this.spotlightDeck.deck}}/>
+    <button
+      class="maroon code bg-dark-card bn white-80 pointer dim mb3 f6 pa0"
+      {{on "click" this.onCloseFullDeckList}}
+    >&lt; back to deck selection</button>
+  {{else}}
+    <h3 class="fw3 code mv2">Saved Decks</h3>
+    {{#each this.savedDecks.deckList as |deck|}}
+      <div class="mv3">
+        <div class="flex items-center">
+          <button
+            class="db w-100 w-auto-ns bg-dark-card-l bg-black-20 bn pa0" role="button"
+            {{on "click" (fn this.onShowFullDeckList deck)}} >
+            <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />
+          </button>
+          <div
+            class="bg-dark-card pa2 white pointer glow bn db ml3 o-50"
+            role="button"
+            {{on "click" (fn @selectDeck deck)}}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#19a974" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+    <h3 class="pt3 mv3 fw3 code mv2">New Deck</h3>
+    <div class="flex items-center">
+      <Input
+        @type="text"
+        @value={{this.pastedDeckCode}}
+        class="code db pa3 w-100 ba white-80 b--black-50 bg-black-30"
+        {{on "input" this.verifyDeckCode}}
+        placeholder="Paste deckcode.."/>
+      {{#if this.isValidDeckCode}}
+        <div
+          class="bg-dark-card pa2 white bn db ml3 o-50 glow pointer"
+          role="button"
+          {{on "click" this.selectPastedDeck}}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#19a974" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+        </div>
+      {{else}}
+        <div
+          class="bg-dark-card pa2 white bn db ml3 o-20">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#cccccc" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+        </div>
+      {{/if}}
+    </div>
+  {{/if}}
+</Modal>

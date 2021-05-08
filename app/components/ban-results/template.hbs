@@ -1,0 +1,63 @@
+<section class="flex-l items-center justify-between">
+  <div>
+    <h3 class="code fw1">
+      Opponent Decks
+    </h3>
+    {{#each this.otherPlayerDecks as |deckObj index|}}
+      <div class="mv3">
+        {{#if (contains this.playerRoomState.yourBans deckObj.deck.code)}}
+        <div class="flex items-center">
+          <button
+            class="db w-100 w-auto-ns bg-dark-card bn pa0 o-50" role="button"
+            {{on "click" (fn @showFullDeckList deckObj)}}
+            >
+            <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+          </button>
+          <span class=" ml3 red">Banned</span>
+        </div>
+        {{else}}
+        <div class="flex items-center">
+          <button
+            class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
+            {{on "click" (fn @showFullDeckList deckObj)}}
+            >
+            <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+          </button>
+        </div>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+  <h3 class="code fw1 gold ma4 tc">
+    VS
+  </h3>
+  <div>
+    <h3 class="code fw1">
+      Your Decks
+    </h3>
+    {{#each this.yourDecks as |deckObj index|}}
+      <div class="mv3">
+        {{#if (contains (get this.playerRoomState.otherBans 0)  deckObj.deck.code)}}
+        <div class="flex items-center">
+          <button
+            class="db w-100 w-auto-ns bg-dark-card bn pa0 o-50" role="button"
+            {{on "click" (fn @showFullDeckList deckObj)}}
+            >
+            <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+          </button>
+          <span class=" ml3 red">Banned</span>
+        </div>
+        {{else}}
+        <div class="flex items-center">
+          <button
+            class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
+            {{on "click" (fn @showFullDeckList deckObj)}}
+            >
+            <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+          </button>
+        </div>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+</section>

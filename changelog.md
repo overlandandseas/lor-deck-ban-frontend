@@ -1,7 +1,14 @@
 # Changelog
 
+<<<<<<< HEAD
 ## 3/5/2021
 - Added Shurima Bundle
+=======
+## 5/8/2021
+- Updated styling
+- Updated mobile version
+- new backend more stable for people with poor connections
+>>>>>>> new-look
 
 ## 2/13/2021
 - Updated sets to Aphelios Bundle

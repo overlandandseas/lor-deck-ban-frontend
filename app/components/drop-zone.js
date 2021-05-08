@@ -8,6 +8,7 @@ export default class DropZone extends Component {
   @action
   dropItem(idx, evt) {
     this.dragAndDrop.dropItem(evt, idx);
+    this.args.selectDeck(this.dragAndDrop.deck, idx);
   }
 
   @action

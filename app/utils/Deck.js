@@ -30,6 +30,7 @@ export default class Deck {
     this.champions = [];
     this.landmarks = [];
     this.cards = [];
+    this.regions = [];
     this.regionsObj = {};
 
     this.code = deckCode;
