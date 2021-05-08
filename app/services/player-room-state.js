@@ -29,6 +29,8 @@ export default class PlayerRoomStateService extends Service {
     this.connected = jsonData.connected;
     this.numberOfDecks = jsonData.numberOfDecks;
     this.numberOfBans = jsonData.numberOfBans;
+
+    console.log("playerRoomState", this.numberOfDecks);
   }
 
 }

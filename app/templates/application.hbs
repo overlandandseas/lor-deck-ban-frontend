@@ -1,7 +1,11 @@
 <Navigation />
-<div class="mw9 center">
-  <!-- <SideBarHolder /> -->
-  <section class="ma3 ma5-ns">
-    {{outlet}}
-  </section>
+<div class="flex justify-between">
+  <div class="mw9">
+    <section class="ma3 ma5-ns">
+      {{outlet}}
+    </section>
+  </div>
+  <div class="dn db-l">
+    <SavedDecks />
+  </div>
 </div>

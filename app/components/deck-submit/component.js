@@ -10,9 +10,19 @@ export default class DeckSubmit extends Component {
 
   @tracked showSelectDeckModal = false;
 
-  @computed('args.playerDecks.length', 'playerRoomState.numberOfDecks')
+  @computed('args.playerDecks.[]', 'playerRoomState.numberOfDecks')
   get showSubmitDeckButton() {
-    return this.args.playerDecks.length >= this.playerRoomState.numberOfDecks;
+    return this.args.playerDecks.filter(i => i).length >= this.playerRoomState.numberOfDecks;
+  }
+
+  @computed('playerRoomState.connected')
+  get isOtherPlayerConnected() {
+    return this.playerRoomState.connected > 1;
+  }
+
+  @computed('args.playerDecks.[]')
+  get numberOfDecksPresent() {
+    return this.args.playerDecks.filter(i => i).length;
   }
 
   @action

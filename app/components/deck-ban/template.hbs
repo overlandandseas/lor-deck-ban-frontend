@@ -1,0 +1,67 @@
+<h3 class="code fw1">Opponent Decks</h3>
+{{#if (is-empty this.otherPlayerDecks)}}
+  <p class="code white-50">waiting..</p>
+{{/if}}
+{{#each this.otherPlayerDecks as |deckObj index|}}
+  <div class="mv3">
+    {{#if (eq this.banSelection deckObj.deck.code)}}
+    <div class="flex items-center">
+      <button
+        class="db w-100 w-auto-ns bg-dark-card bn pa0 o-50" role="button"
+        {{on "click" (fn @showFullDeckList deckObj)}}
+        >
+        <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+      </button>
+      <div
+        class="bg-dark-mode pa2 white pointer bn db ml3 0-75"
+        role="button"
+        {{on "click" (fn this.selectBan deckObj.deck.code)}}>
+
+        <RbIcons @icon="gavel-inverse" @color="#E7040F" />
+      </div>
+    </div>
+    {{else}}
+    <div class="flex items-center">
+      <button
+        class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
+        {{on "click" (fn @showFullDeckList deckObj)}}
+        >
+        <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+      </button>
+      <div
+        class="bg-dark-mode pa2 white pointer glow bn db ml3 o-50"
+        role="button"
+        {{on "click" (fn this.selectBan deckObj.deck.code)}}>
+        <RbIcons @icon="gavel" @color="#FF4136" />
+      </div>
+    </div>
+    {{/if}}
+  </div>
+{{/each}}
+<div class="mt4">
+  {{#if (eq this.banSelection -1)}}
+    <button
+      class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link o-50">
+      Submit Ban
+    </button>
+  {{else}}
+    <button
+      class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link dim pointer"
+      {{on "click" (fn @banDeck banSelection)}}>
+      Submit Ban
+    </button>
+  {{/if}}
+</div>
+  <h3 class="code fw1">
+    Your Decks
+  </h3>
+{{#each this.yourDecks as |deckObj| }}
+<div class="mv3">
+  <button
+    class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
+    {{on "click" (fn @showFullDeckList deckObj)}}
+    >
+    <DeckThumbnail @deck={{deckObj.deck}} @name={{deckObj.name}} />
+  </button>
+</div>
+{{/each}}

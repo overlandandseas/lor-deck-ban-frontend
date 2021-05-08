@@ -21,7 +21,7 @@ export default class PlayerStatus extends Component {
       return {
         class: 'bans',
         image: 'bans.jpg',
-        text: 'Opponent submitted bans.'
+        text: `Opponent submitted ${this.playerRoomState.numberOfBans > 1 ? 'bans' : 'ban'}.`
       };
     }
 

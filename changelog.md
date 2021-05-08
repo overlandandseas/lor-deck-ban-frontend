@@ -1,5 +1,10 @@
 # Changelog
 
+## 5/8/2021
+- Updated styling
+- Updated mobile version
+- new backend more stable for people with poor connections
+
 ## 2/13/2021
 - Updated sets to Aphelios Bundle
 
