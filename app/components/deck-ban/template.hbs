@@ -2,11 +2,12 @@
 {{#if (is-empty this.otherPlayerDecks)}}
   <p class="code white-50">waiting..</p>
 {{/if}}
-{{#each this.otherPlayerDecks as |deckObj index|}}
+{{#each this.otherPlayerDecks as |deckObj|}}
   <div class="mv3">
     {{#if (eq this.banSelection deckObj.deck.code)}}
     <div class="flex items-center">
       <button
+        type="button"
         class="db w-100 w-auto-ns bg-dark-card bn pa0 o-50" role="button"
         {{on "click" (fn @showFullDeckList deckObj)}}
         >
@@ -23,6 +24,7 @@
     {{else}}
     <div class="flex items-center">
       <button
+        type="button"
         class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
         {{on "click" (fn @showFullDeckList deckObj)}}
         >
@@ -41,13 +43,15 @@
 <div class="mt4">
   {{#if (eq this.banSelection -1)}}
     <button
+      type="button"
       class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link o-50">
       Submit Ban
     </button>
   {{else}}
     <button
+      type="button"
       class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link dim pointer"
-      {{on "click" (fn @banDeck banSelection)}}>
+      {{on "click" (fn @banDeck this.banSelection)}}>
       Submit Ban
     </button>
   {{/if}}
@@ -58,6 +62,7 @@
 {{#each this.yourDecks as |deckObj| }}
 <div class="mv3">
   <button
+    type="button"
     class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
     {{on "click" (fn @showFullDeckList deckObj)}}
     >

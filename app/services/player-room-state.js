@@ -30,7 +30,7 @@ export default class PlayerRoomStateService extends Service {
     this.numberOfDecks = jsonData.numberOfDecks;
     this.numberOfBans = jsonData.numberOfBans;
 
-    console.log("playerRoomState", this.numberOfDecks);
+    console.log('playerRoomState', this.numberOfDecks);
   }
 
 }

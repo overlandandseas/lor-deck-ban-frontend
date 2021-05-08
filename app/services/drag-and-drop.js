@@ -1,7 +1,6 @@
 import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { A } from '@ember/array';
-import { computed } from '@ember/object';
 
 
 export default class DragAndDropService extends Service {

@@ -52,6 +52,6 @@ export default class SelectDeckModal extends Component {
   }
 
   closeViewDeckModal() {
-    console.log("close view deck");
+    console.log('close view deck');
   }
 }

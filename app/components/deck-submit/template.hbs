@@ -1,11 +1,13 @@
 {{#if this.showSubmitDeckButton}}
   <button
+    type="button"
     class="db w-100 white-80 bg-maroon ba b--white-20 br-pill tc pa3 code link dim pointer"
     {{on "click" @submitPlayerDecks}}>
     Submit Decks
   </button>
 {{else}}
   <button
+    type="button"
     {{on "click" this.onOpenSelectDeckModal}}
     class="db w-100 white-80 bg-dark-mode ba b--white-20 br-pill tc pa3 code link pointer dim"
   >

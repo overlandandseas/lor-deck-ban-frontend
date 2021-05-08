@@ -6,6 +6,7 @@
 
     <DragZone @deck={{deckObj}}>
       <button
+        type="button"
         class="db w-100 w-auto-ns bg-dark-card bn pa0" role="button"
         {{on "click" (fn this.showFullDeckList deckObj)}}
         >

@@ -1,7 +1,7 @@
-import Component from "@glimmer/component";
-import { action, computed } from "@ember/object";
-import { inject } from "@ember/service";
-import { tracked } from "@glimmer/tracking";
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+import { inject } from '@ember/service';
+import { tracked } from '@glimmer/tracking';
 import Deck from 'lor-card-ban-frontend/utils/Deck';
 
 

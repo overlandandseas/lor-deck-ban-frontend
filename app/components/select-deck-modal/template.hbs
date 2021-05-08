@@ -2,12 +2,14 @@
 
   {{#if this.showFullDeckList}}
     <button
+      type="button"
       class="maroon code bg-dark-card bn white-80 pointer dim mb3 f6 pa0"
       {{on "click" this.onCloseFullDeckList}}
     >&lt; back to deck selection</button>
     <h3 class="fw3 code mv2">{{this.spotlightDeck.name}}</h3>
     <DeckList @deck={{this.spotlightDeck.deck}}/>
     <button
+      type="button"
       class="maroon code bg-dark-card bn white-80 pointer dim mb3 f6 pa0"
       {{on "click" this.onCloseFullDeckList}}
     >&lt; back to deck selection</button>
@@ -17,6 +19,7 @@
       <div class="mv3">
         <div class="flex items-center">
           <button
+            type="button"
             class="db w-100 w-auto-ns bg-dark-card-l bg-black-20 bn pa0" role="button"
             {{on "click" (fn this.onShowFullDeckList deck)}} >
             <DeckThumbnail @deck={{deck.deck}} @name={{deck.name}} />

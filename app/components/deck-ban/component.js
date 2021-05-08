@@ -3,7 +3,7 @@ import { inject } from '@ember/service';
 import { computed, action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import Deck from 'lor-card-ban-frontend/utils/Deck';
-import { isEmpty } from "@ember/utils";
+import { isEmpty } from '@ember/utils';
 
 
 

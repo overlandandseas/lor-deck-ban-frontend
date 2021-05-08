@@ -37,7 +37,7 @@ export default class PlayerStatus extends Component {
       class: 'connected',
       image: 'connected.jpg',
       text: 'Opponent connected.'
-    };;
+    };
   }
 
   @computed('playerRoomState.{yourDecks,yourBans,otherBans}')

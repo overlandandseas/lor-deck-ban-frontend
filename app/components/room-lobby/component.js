@@ -1,9 +1,9 @@
-import Component from "@glimmer/component";
-import { action, computed } from "@ember/object";
-import { inject } from "@ember/service";
-import { tracked } from "@glimmer/tracking";
-import config from "lor-card-ban-frontend/config/environment";
-import { isEmpty } from "@ember/utils";
+import Component from '@glimmer/component';
+import { action, computed } from '@ember/object';
+import { inject } from '@ember/service';
+import { tracked } from '@glimmer/tracking';
+import config from 'lor-card-ban-frontend/config/environment';
+import { isEmpty } from '@ember/utils';
 
 export default class RoomLobby extends Component {
   @inject playerRoomState;
@@ -16,7 +16,7 @@ export default class RoomLobby extends Component {
   @tracked isFullDeckModalOpen = false;
 
 
-  @computed("playerRoomState.numberOfDecks", "playerDecks.[]")
+  @computed('playerRoomState.numberOfDecks', 'playerDecks.[]')
   get desktopDeckList() {
     const arr =  [...this.playerDecks];
     for(var c = 0; c < this.playerRoomState.numberOfDecks; c++) {
@@ -27,12 +27,12 @@ export default class RoomLobby extends Component {
     return arr;
   }
 
-  @computed("playerRoomState.{yourDecks,yourBans,otherBans}")
+  @computed('playerRoomState.{yourDecks,yourBans,otherBans}')
   get showDeckSubmit() {
     return isEmpty(this.playerRoomState.yourDecks);
   }
 
-  @computed("playerRoomState.{yourDecks,yourBans,otherBans}")
+  @computed('playerRoomState.{yourDecks,yourBans,otherBans}')
   get showDeckBan() {
     return (
       !isEmpty(this.playerRoomState.yourDecks) &&
@@ -40,7 +40,7 @@ export default class RoomLobby extends Component {
     );
   }
 
-  @computed("playerRoomState.{yourDecks,yourBans,otherBans}")
+  @computed('playerRoomState.{yourDecks,yourBans,otherBans}')
   get showBanResult() {
     return (
       !isEmpty(this.playerRoomState.otherBans) &&
@@ -64,13 +64,13 @@ export default class RoomLobby extends Component {
 
     this.socketRef = socket;
 
-    socket.on("open", this.onOpen, this);
-    socket.on("message", this.onMessage, this);
-    socket.on("close", this.onClose, this);
+    socket.on('open', this.onOpen, this);
+    socket.on('message', this.onMessage, this);
+    socket.on('close', this.onClose, this);
   }
 
   onOpen() {
-    console.log("opened connection");
+    console.log('opened connection');
   }
 
   onMessage(msg) {
@@ -94,7 +94,7 @@ export default class RoomLobby extends Component {
 
   @action
   submitPlayerDecks() {
-    const deckCodes = this.playerDecks.map((i) => i.deck.code).join(",");
+    const deckCodes = this.playerDecks.map((i) => i.deck.code).join(',');
     this.socketRef.send(`DECK_SUBMIT;${deckCodes}`);
   }
 
