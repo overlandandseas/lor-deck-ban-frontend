@@ -34,6 +34,7 @@ export default class SavedDecks extends Component {
   @action
   openNewDeckModal(evt) {
     evt.stopPropagation();
+    window.scrollTo(0,0);
     this.pastedDeckCode = null;
     this.isNewDeckModalOpen = true;
     this.isValidDeckCode = null;

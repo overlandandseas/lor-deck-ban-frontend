@@ -1,4 +1,4 @@
-<section class="ma5">
+<section class="ma3 ma5-ns">
 
   <p class="code f4 fw3 mv3">Saved Decks</p>
   {{#each this.savedDecks.deckList as |deckObj|}}
@@ -49,10 +49,11 @@
         class="code db pa3 w-100 ba white-80 b--black-50 bg-black-30"
         />
         <div
-        class="bg-dark-card pa2 white bn db ml3 o-50 glow pointer"
+        class="bg-dark-card pa2 white pointer glow ba b--green br1 db ml3 o-50"
         role="button"
+        style="height: 42px;"
         {{on "click" this.saveDeck}}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#19a974" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#19A974" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
       </div>
     </div>
       <DeckList @deck={{this.spotlightDeck}}/>
