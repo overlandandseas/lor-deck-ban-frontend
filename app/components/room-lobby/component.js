@@ -69,14 +69,25 @@ export default class RoomLobby extends Component {
     socket.on('close', this.onClose, this);
   }
 
+  ping() {
+    this.socketRef.send('PING;_');
+    setTimeout(this.ping.bind(this), 10000);
+  }
+
   onOpen() {
     console.log('opened connection');
+    this.ping();
   }
 
   onMessage(msg) {
-    console.log(msg)
-    this.playerRoomState.updateRoomState(msg.data);
+    if(msg.data !== "PONG") {
+
+      console.log(msg)
+      this.playerRoomState.updateRoomState(msg.data);
+    }
   }
+
+
 
   onClose() {}
 
