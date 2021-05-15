@@ -80,7 +80,7 @@ export default class RoomLobby extends Component {
   }
 
   onMessage(msg) {
-    if(msg.data !== "PONG") {
+    if(msg.data !== 'PONG') {
 
       console.log(msg)
       this.playerRoomState.updateRoomState(msg.data);
