@@ -1,5 +1,8 @@
 # Changelog
 
+## 7/3/2012
+- Updated to 2.11.0
+
 ## 5/8/2021
 - Updated styling
 - Updated mobile version
