@@ -1,6 +1,9 @@
 # Changelog
 
-## 7/3/2012
+## 7/16/2021
+- Updated Viego/Akshan sets
+
+## 7/3/2021
 - Updated to 2.11.0
 
 ## 5/8/2021

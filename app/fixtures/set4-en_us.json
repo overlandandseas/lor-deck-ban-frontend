@@ -500,6 +500,43 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [
+      "04PZ020T1"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04PZ020.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04PZ020-full.png"
+      }
+    ],
+    "region": "Piltover & Zaun",
+    "regionRef": "PiltoverZaun",
+    "attack": 4,
+    "cost": 4,
+    "health": 3,
+    "description": "<link=keyword.PlaySkillMark><sprite name=PlaySkillMark><style=Keyword>Play</style></link>: Swap my stats with another unit.",
+    "descriptionRaw": "Play: Swap my stats with another unit.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"A new slotbot? Didn't they shut down the plant that made these years ago?\"\n\"I thought so. Something about 'rolling bombs' and 'unintended conflagration.\"\n\"Huh.\"\n\"...Wanna play?\"\n\"Absolutely yes.\"\n- Zaunite patrons",
+    "artistName": "Kudos Productions",
+    "name": "Defective Swapbot",
+    "cardCode": "04PZ020",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [],
     "assets": [
       {
@@ -722,6 +759,45 @@
     "supertype": "",
     "type": "Unit",
     "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04PZ020T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04PZ020T1-full.png"
+      }
+    ],
+    "region": "Piltover & Zaun",
+    "regionRef": "PiltoverZaun",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Swap my Attack and Health with that of another unit.",
+    "descriptionRaw": "Swap my Attack and Health with that of another unit.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Dealer's choice!\" - Defective Swapbot",
+    "artistName": "Kudos Productions",
+    "name": "Swapbot's Swap",
+    "cardCode": "04PZ020T1",
+    "keywords": [
+      "Skill"
+    ],
+    "keywordRefs": [
+      "Skill"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Ability",
+    "collectible": false,
     "set": "Set4"
   },
   {
@@ -1355,8 +1431,8 @@
     "attack": 0,
     "cost": 1,
     "health": 0,
-    "description": "When allies attack, <link=keyword.Obliterate><style=Keyword>obliterate</style></link> the top card of your deck if it doesn't have <link=keyword.Lurker><sprite name=Lurker><style=Keyword>Lurk</style></link>.",
-    "descriptionRaw": "When allies attack, obliterate the top card of your deck if it doesn't have Lurk.",
+    "description": "When allies attack, before <link=keyword.Lurker><sprite name=Lurker><style=Keyword>Lurk</style></link> tries to activate, <link=keyword.Obliterate><style=Keyword>obliterate</style></link> the top card of your deck if it doesn't have <link=keyword.Lurker><sprite name=Lurker><style=Keyword>Lurk</style></link>.",
+    "descriptionRaw": "When allies attack, before Lurk tries to activate, obliterate the top card of your deck if it doesn't have Lurk.",
     "levelupDescription": "",
     "levelupDescriptionRaw": "",
     "flavorText": "Bilgewater's more treacherous coves soon became home to all manner of sea beasts. There they lie, waiting for the next foolhardy crew to ignore the harbormaster's warnings.",
@@ -1590,6 +1666,43 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [
+      "02BW028T1"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04BW016.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04BW016-full.png"
+      }
+    ],
+    "region": "Bilgewater",
+    "regionRef": "Bilgewater",
+    "attack": 3,
+    "cost": 5,
+    "health": 3,
+    "description": "<link=keyword.PlaySkillMark><sprite name=PlaySkillMark><style=Keyword>Play</style></link>: Cast <link=card.cast><style=AssociatedCard>Cannon Barrage</style></link> on randomly targeted enemies for each card you've drawn this round, up to 5 times. <style=Variable></style>",
+    "descriptionRaw": "Play: Cast Cannon Barrage on randomly targeted enemies for each card you've drawn this round, up to 5 times. ",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"...Rex?\" - Petty Officer",
+    "artistName": "Kudos Productions",
+    "name": "Ruined Rex",
+    "cardCode": "04BW016",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [],
     "assets": [
       {
@@ -1709,6 +1822,45 @@
     "subtype": "",
     "subtypes": [],
     "supertype": "Champion",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020-full.png"
+      }
+    ],
+    "region": "Ionia",
+    "regionRef": "Ionia",
+    "attack": 5,
+    "cost": 6,
+    "health": 6,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Draw a <link=keyword.Slow><sprite name=Slow><style=Keyword>Slow</style></link>, <link=keyword.Fast><sprite name=Fast><style=Keyword>Fast</style></link>, or <link=keyword.Burst><sprite name=Burst><style=Keyword>Burst</style></link> spell.\r\n<link=keyword.Enlightened><style=Keyword>Enlightened</style></link>: I have <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+    "descriptionRaw": "Play: Draw a Slow, Fast, or Burst spell.\r\nEnlightened: I have Elusive.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The strange and hauntingly beautiful sky-songs of the Cloud Drinkers kept some of the Black Mist at bay... but only for so long.",
+    "artistName": "Kudos Productions",
+    "name": "Scattered Pod",
+    "cardCode": "04IO020",
+    "keywords": [
+      "Attune"
+    ],
+    "keywordRefs": [
+      "Attune"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
     "type": "Unit",
     "collectible": true,
     "set": "Set4"
@@ -2204,6 +2356,123 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T1-full.png"
+      }
+    ],
+    "region": "Ionia",
+    "regionRef": "Ionia",
+    "attack": 5,
+    "cost": 6,
+    "health": 6,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Draw a <link=keyword.Slow><sprite name=Slow><style=Keyword>Slow</style></link> spell.\r\n<link=keyword.Enlightened><style=Keyword>Enlightened</style></link>: I have <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+    "descriptionRaw": "Play: Draw a Slow spell.\r\nEnlightened: I have Elusive.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I know their songs. This is a song of mourning.\" - Ionian farmer",
+    "artistName": "Kudos Productions",
+    "name": "Scattered Pod",
+    "cardCode": "04IO020T1",
+    "keywords": [
+      "Attune"
+    ],
+    "keywordRefs": [
+      "Attune"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T2.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T2-full.png"
+      }
+    ],
+    "region": "Ionia",
+    "regionRef": "Ionia",
+    "attack": 5,
+    "cost": 6,
+    "health": 6,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Draw a <link=keyword.Fast><sprite name=Fast><style=Keyword>Fast</style></link> spell.\r\n<link=keyword.Enlightened><style=Keyword>Enlightened</style></link>: I have <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+    "descriptionRaw": "Play: Draw a Fast spell.\r\nEnlightened: I have Elusive.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I know their songs. This is a song of mourning.\" - Ionian farmer",
+    "artistName": "Kudos Productions",
+    "name": "Scattered Pod",
+    "cardCode": "04IO020T2",
+    "keywords": [
+      "Attune"
+    ],
+    "keywordRefs": [
+      "Attune"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T3.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04IO020T3-full.png"
+      }
+    ],
+    "region": "Ionia",
+    "regionRef": "Ionia",
+    "attack": 5,
+    "cost": 6,
+    "health": 6,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Draw a <link=keyword.Burst><sprite name=Burst><style=Keyword>Burst</style></link> spell.\r\n<link=keyword.Enlightened><style=Keyword>Enlightened</style></link>: I have <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+    "descriptionRaw": "Play: Draw a Burst spell.\r\nEnlightened: I have Elusive.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I know their songs. This is a song of mourning.\" - Ionian farmer",
+    "artistName": "Kudos Productions",
+    "name": "Scattered Pod",
+    "cardCode": "04IO020T3",
+    "keywords": [
+      "Attune"
+    ],
+    "keywordRefs": [
+      "Attune"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [
       "01IO032"
     ],
@@ -2686,8 +2955,8 @@
     "attack": 0,
     "cost": 2,
     "health": 0,
-    "description": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurker followers in hand.\r\nCreate a <link=card.level1><style=AssociatedCard>Rek'Sai</style></link> in your deck.",
-    "descriptionRaw": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurker followers in hand.\r\nCreate a Rek'Sai in your deck.",
+    "description": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurkers in hand.\r\nCreate a <link=card.level1><style=AssociatedCard>Rek'Sai</style></link> in your deck.",
+    "descriptionRaw": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurkers in hand.\r\nCreate a Rek'Sai in your deck.",
     "levelupDescription": "",
     "levelupDescriptionRaw": "",
     "flavorText": "\"May the sun shine, and may the xer'sai sleep.\"\n- Merchant's prayer",
@@ -2757,6 +3026,47 @@
     "supertype": "Champion",
     "type": "Unit",
     "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH138T1"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH138.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH138-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 2,
+    "health": 0,
+    "description": "Give an ally +2|+1 this round. If you have leveled a champion this game, create a <link=card.create><style=AssociatedCard>The Absolver's Return</style></link> in hand.",
+    "descriptionRaw": "Give an ally +2|+1 this round. If you have leveled a champion this game, create a The Absolver's Return in hand.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Everyone told me not to use this. 'No one must wield such a powerful weapon,' they said.\" - Akshan",
+    "artistName": "Kudos Productions",
+    "name": "The Absolver",
+    "cardCode": "04SH138",
+    "keywords": [
+      "Burst"
+    ],
+    "keywordRefs": [
+      "Burst"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": true,
     "set": "Set4"
   },
   {
@@ -2929,8 +3239,8 @@
     "attack": 0,
     "cost": 2,
     "health": 0,
-    "description": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurker followers in hand.",
-    "descriptionRaw": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurker followers in hand.",
+    "description": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurkers in hand.",
+    "descriptionRaw": "To play, put a card from hand on top of your deck.\r\nCreate 2 random Lurkers in hand.",
     "levelupDescription": "",
     "levelupDescriptionRaw": "",
     "flavorText": "\"May the sun shine, and may the xer'sai sleep.\"\n- Merchant's prayer",
@@ -4276,6 +4586,551 @@
   {
     "associatedCards": [],
     "associatedCardRefs": [
+      "04SH130T2",
+      "04SH130T5",
+      "04SH130T1",
+      "04SH130T10",
+      "04SH003T14",
+      "04SH130T6",
+      "04SH130T13",
+      "04SH130T14",
+      "04SH130T7",
+      "04SH130T8"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 2,
+    "cost": 2,
+    "health": 2,
+    "description": "When I'm summoned or <link=vocab.Strike><style=Vocab>Strike</style></link>: Summon a <link=card.create><style=AssociatedCard>Warlord's Palace</style></link> or <link=vocab.Advance><style=Vocab>advance</style></link> it 1 round. ",
+    "descriptionRaw": "When I'm summoned or Strike: Summon a Warlord's Palace or advance it 1 round. ",
+    "levelupDescription": "<link=card.create><style=AssociatedCard>Warlord's Palace</style></link> has finished its <link=vocab.Buried><style=Vocab>Countdown</style></link>.<br>",
+    "levelupDescriptionRaw": "Warlord's Palace has finished its Countdown.",
+    "flavorText": "\"The Sentinels' code seems full of complicated restrictions. Things like 'Never take a life in the name of vengeance' and 'Fight for the world, never for yourself'. As for me...\"",
+    "artistName": "SIXMOREVODKA",
+    "name": "Akshan",
+    "cardCode": "04SH130",
+    "keywords": [
+      "Quick Attack"
+    ],
+    "keywordRefs": [
+      "QuickStrike"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "Champion",
+    "rarityRef": "Champion",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130",
+      "04SH130T2"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T5.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T5-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 3,
+    "health": 0,
+    "description": "An ally you've targeted this round <link=vocab.Strike><style=Vocab>strikes</style></link> an enemy.\r\nCreate an <link=card.level1><style=AssociatedCard>Akshan</style></link> in your deck.",
+    "descriptionRaw": "An ally you've targeted this round strikes an enemy.\r\nCreate an Akshan in your deck.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"They never expect the grappling hook!\" - Akshan",
+    "artistName": "Kudos Productions",
+    "name": "Akshan's Grappling Hook",
+    "cardCode": "04SH130T5",
+    "keywords": [
+      "Slow"
+    ],
+    "keywordRefs": [
+      "Slow"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130T6",
+      "04SH130T13",
+      "04SH130T14",
+      "04SH130T7",
+      "04SH130T8",
+      "04SH130T5",
+      "04SH130"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T2.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T2-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 3,
+    "cost": 2,
+    "health": 3,
+    "description": "When I'm summoned, level up, or <link=vocab.Strike><style=Vocab>Strike</style></link>: Summon a <link=card.create1><style=AssociatedCard>Warlord's Hoard</style></link> or <link=vocab.Advance><style=Vocab>advance</style></link> it 1 round.",
+    "descriptionRaw": "When I'm summoned, level up, or Strike: Summon a Warlord's Hoard or advance it 1 round.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"My code is far simpler--disregard any rule that prevents me from doing whatever I want.\"",
+    "artistName": "SIXMOREVODKA",
+    "name": "Akshan",
+    "cardCode": "04SH130T2",
+    "keywords": [
+      "Quick Attack"
+    ],
+    "keywordRefs": [
+      "QuickStrike"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "Champion",
+    "rarityRef": "Champion",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130T10",
+      "04SH003T14",
+      "04SH130"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T1-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 1,
+    "health": 0,
+    "description": "<link=vocab.Buried><style=Vocab>Countdown 8</style></link><style=Variable></style>: Create a <link=card.discover><style=AssociatedCard>Relic of Power</style></link> in hand.\r\nWhen you target allies <link=vocab.Advance><style=Vocab>advance</style></link> me 1.\r\n",
+    "descriptionRaw": "Countdown 8: Create a Relic of Power in hand.\r\nWhen you target allies advance me 1.\r\n",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"See that eyesore of a building? That's where the swine lives. We'll take him out, grab the loot, and be back in time for dinner.\" - Vekauran Vagabond",
+    "artistName": "Kudos Productions",
+    "name": "Warlord's Palace",
+    "cardCode": "04SH130T1",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Landmark",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130T13",
+      "04SH130T14",
+      "04SH130T7",
+      "04SH130T8",
+      "04SH130T2"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T6.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T6-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 1,
+    "health": 0,
+    "description": "<link=vocab.Buried><style=Vocab>Countdown 8</style></link><style=Variable></style>: Create a <link=card.create><style=AssociatedCard>Sentinel's Hoard</style></link> in hand.\r\nWhen you target allies <link=vocab.Advance><style=Vocab>advance</style></link> me 1.",
+    "descriptionRaw": "Countdown 8: Create a Sentinel's Hoard in hand.\r\nWhen you target allies advance me 1.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "When a group of survivors from the fallen city of Vekaura learned of a particular warlord's sordid history, they wasted no time making plans to seize his ill-gotten gains.",
+    "artistName": "Kudos Productions",
+    "name": "Warlord's Hoard",
+    "cardCode": "04SH130T6",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Landmark",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130T14",
+      "04SH130T7",
+      "04SH130T8"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T13.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T13-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Cast a <link=card.choice3><style=AssociatedCard>The Absolver's Resurrection</style></link>, a <link=card.choice2><style=AssociatedCard>Fount of Power</style></link>, or a <link=card.choice1><style=AssociatedCard>Shield of the Sentinels</style></link>.",
+    "descriptionRaw": "Cast a The Absolver's Resurrection, a Fount of Power, or a Shield of the Sentinels.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Before the thief could even reach for her tools, a pale green fog enveloped the box, coaxing it open with a cold whisper.",
+    "artistName": "Kudos Productions",
+    "name": "Sentinel's Hoard",
+    "cardCode": "04SH130T13",
+    "keywords": [
+      "Fleeting",
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Fleeting",
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T7.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T7-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Draw 2. Your cards cost 1 less this round.",
+    "descriptionRaw": "Draw 2. Your cards cost 1 less this round.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"My love... Why won't you answer? Please. Answer me, Isolde. ANSWER ME!\" - Viego",
+    "artistName": "Kudos Productions",
+    "name": "Fount of Power",
+    "cardCode": "04SH130T7",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T14.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T14-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Grant all enemies <link=keyword.Vulnerable><sprite name=Vulnerable><style=Keyword>Vulnerable</style></link> and create in hand a 0 cost copy of the <link=vocab.Strongest><style=Vocab>strongest</style></link> ally that died this game.",
+    "descriptionRaw": "Grant all enemies Vulnerable and create in hand a 0 cost copy of the strongest ally that died this game.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Fate is what I make it.\" - Akshan",
+    "artistName": "Kudos Productions",
+    "name": "The Absolver's Resurrection",
+    "cardCode": "04SH130T14",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T8.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T8-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Grant your champions <link=vocab.Everywhere><style=Vocab>everywhere</style></link> <link=keyword.SpellShield><sprite name=SpellShield><style=Keyword>SpellShield</style></link> and +2|+2.",
+    "descriptionRaw": "Grant your champions everywhere SpellShield and +2|+2.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The Sentinels of Light trace their heritage back to blessed Helia. The relic stones they saved from the Ruination would become the world's greatest defense against the darkness of the Black Mist.",
+    "artistName": "Kudos Productions",
+    "name": "Shield of the Sentinels",
+    "cardCode": "04SH130T8",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH003T14",
+      "04SH130T1",
+      "04SH130"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T10.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T10-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Pick 1 - <link=vocab.Predict><style=Vocab>Predict</style></link> then draw 1, summon a <link=card.summon><style=AssociatedCard>Sandstone Charger</style></link>, or grant all allies +1|+0.",
+    "descriptionRaw": "Pick 1 - Predict then draw 1, summon a Sandstone Charger, or grant all allies +1|+0.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The Black Mist searched for her in everything. It cried out in his voice, grasped forward with his pleading hands, commanding her to return. But she could not. She would not.",
+    "artistName": "Kudos Productions",
+    "name": "Relic of Power",
+    "cardCode": "04SH130T10",
+    "keywords": [
+      "Fleeting",
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Fleeting",
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH003T14"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T12.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T12-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Summon a <link=card.summon><style=AssociatedCard>Sandstone Charger</style></link>.",
+    "descriptionRaw": "Summon a Sandstone Charger.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The mist searched for her in everything. It cried out in his voice, grasped forward with his pleading hands, commanding her to return. But she could not. She would not.",
+    "artistName": "Kudos Productions",
+    "name": "Relic of Power",
+    "cardCode": "04SH130T12",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T9.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T9-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "Grant all allies +1|+0.",
+    "descriptionRaw": "Grant all allies +1|+0.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The mist searched for her in everything. It cried out in his voice, grasped forward with his pleading hands, commanding her to return. But she could not. She would not.",
+    "artistName": "Kudos Productions",
+    "name": "Relic of Power",
+    "cardCode": "04SH130T9",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T11.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH130T11-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "<link=vocab.Predict><style=Vocab>Predict</style></link>, then draw 1.",
+    "descriptionRaw": "Predict, then draw 1.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The mist searched for her in everything. It cried out in his voice, grasped forward with his pleading hands, commanding her to return. But she could not. She would not.",
+    "artistName": "Kudos Productions",
+    "name": "Relic of Power",
+    "cardCode": "04SH130T11",
+    "keywords": [
+      "Focus"
+    ],
+    "keywordRefs": [
+      "Focus"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
       "04SH003T1"
     ],
     "assets": [
@@ -4541,6 +5396,47 @@
     "associatedCardRefs": [],
     "assets": [
       {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH138T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH138T1-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 2,
+    "health": 0,
+    "description": "Give an ally <link=keyword.Overwhelm><sprite name=Overwhelm><style=Keyword>Overwhelm</style></link> and +2|+1 this round.",
+    "descriptionRaw": "Give an ally Overwhelm and +2|+1 this round.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Eh. Who cares?\" - Akshan",
+    "artistName": "Kudos Productions",
+    "name": "The Absolver's Return",
+    "cardCode": "04SH138T1",
+    "keywords": [
+      "Burst",
+      "Fleeting"
+    ],
+    "keywordRefs": [
+      "Burst",
+      "Fleeting"
+    ],
+    "spellSpeed": "Burst",
+    "spellSpeedRef": "Burst",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
         "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH120.png",
         "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH120-full.png"
       }
@@ -4798,6 +5694,44 @@
     "spellSpeedRef": "",
     "rarity": "RARE",
     "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH130T1",
+      "04SH130T10"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH128.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH128-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 3,
+    "cost": 3,
+    "health": 3,
+    "description": "When I'm summoned, summon a <link=card.create><style=AssociatedCard>Warlord's Palace</style></link> or <link=vocab.Advance><style=Vocab>advance</style></link> it 2 rounds.",
+    "descriptionRaw": "When I'm summoned, summon a Warlord's Palace or advance it 2 rounds.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Seeing Akshan hanging underneath the fourth-floor window, Najah cursed under her breath. Pretty boy beat her to the mark. Again. Turning her dagger over in her hand, she pondered what to say to him. Maybe this time, he'd finally acknowledge her.",
+    "artistName": "Kudos Productions",
+    "name": "Vekauran Vagabond",
+    "cardCode": "04SH128",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
     "subtype": "",
     "subtypes": [],
     "supertype": "",
@@ -6636,6 +7570,41 @@
     "associatedCardRefs": [],
     "assets": [
       {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH125.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH125-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 4,
+    "cost": 4,
+    "health": 4,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Give an ally +2|+0 to give an enemy -2|-0 this round.",
+    "descriptionRaw": "Play: Give an ally +2|+0 to give an enemy -2|-0 this round.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Tena waited patiently as her pet's caustic spittle wore away the gilded bars of the palace's rear gate. Around the corner, she would soon find a hoard of unspeakably valuable treasure--more than enough to bring Vekaura back to its former glory.",
+    "artistName": "Kudos Productions",
+    "name": "Vekauran Safecracker",
+    "cardCode": "04SH125",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
         "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH108.png",
         "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH108-full.png"
       }
@@ -7698,6 +8667,45 @@
     "associatedCardRefs": [],
     "assets": [
       {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH131.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH131-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 0,
+    "cost": 3,
+    "health": 0,
+    "description": "An ally you've targeted this round <link=vocab.Strike><style=Vocab>strikes</style></link> an enemy.",
+    "descriptionRaw": "An ally you've targeted this round strikes an enemy.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"They never expect the grappling hook!\" - Akshan",
+    "artistName": "Kudos Productions",
+    "name": "Grappling Hook",
+    "cardCode": "04SH131",
+    "keywords": [
+      "Slow"
+    ],
+    "keywordRefs": [
+      "Slow"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
         "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH074.png",
         "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH074-full.png"
       }
@@ -7731,6 +8739,45 @@
     "subtypes": [
       "LURKER"
     ],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH137.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH137-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 8,
+    "cost": 7,
+    "health": 4,
+    "description": "When I'm summoned, create a copy of me in hand if you've leveled a champion this game.",
+    "descriptionRaw": "When I'm summoned, create a copy of me in hand if you've leveled a champion this game.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The giant scarabs were thought to have perished when the Shuriman empire fell. But the Mist's creeping tendrils burrowed deep into the sands, and bound the ancient things to Viego's service.\n",
+    "artistName": "Kudos Productions",
+    "name": "Thrumming Swarm",
+    "cardCode": "04SH137",
+    "keywords": [
+      "Overwhelm"
+    ],
+    "keywordRefs": [
+      "Overwhelm"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "EPIC",
+    "rarityRef": "Epic",
+    "subtype": "",
+    "subtypes": [],
     "supertype": "",
     "type": "Unit",
     "collectible": true,
@@ -8049,6 +9096,43 @@
     "subtypes": [],
     "supertype": "",
     "type": "Spell",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SH098"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH129.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SH129-full.png"
+      }
+    ],
+    "region": "Shurima",
+    "regionRef": "Shurima",
+    "attack": 5,
+    "cost": 5,
+    "health": 5,
+    "description": "<link=vocab.Strike><style=Vocab>Strike</style></link>: Create a <link=card.create1><style=AssociatedCard>Lucky Find</style></link> in hand.",
+    "descriptionRaw": "Strike: Create a Lucky Find in hand.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Okay, Barb. That's the last of the guards on this floor, but we've still gotta keep a low profile.\"\n\"BLARGH-BLAAA!\"\n\"Inside voice, Barbara.\"\n\"Blarb.\"\n\"That's my girl.\"",
+    "artistName": "Kudos Productions",
+    "name": "Vekauran Bruiser",
+    "cardCode": "04SH129",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
     "collectible": true,
     "set": "Set4"
   },
@@ -8542,6 +9626,45 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04FR019T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04FR019T1-full.png"
+      }
+    ],
+    "region": "Freljord",
+    "regionRef": "Freljord",
+    "attack": 1,
+    "cost": 1,
+    "health": 1,
+    "description": "",
+    "descriptionRaw": "",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The young wolves were the most nervous, but were quickly emboldened as they saw their mother lunge for the boar's throat, icy fangs flashing.",
+    "artistName": "Kudos Productions",
+    "name": "Rimefang Pack",
+    "cardCode": "04FR019T1",
+    "keywords": [
+      "Overwhelm"
+    ],
+    "keywordRefs": [
+      "Overwhelm"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [
       "04FR001T1"
     ],
@@ -8817,6 +9940,43 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [
+      "04FR019T1"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04FR019.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04FR019-full.png"
+      }
+    ],
+    "region": "Freljord",
+    "regionRef": "Freljord",
+    "attack": 5,
+    "cost": 6,
+    "health": 5,
+    "description": "When I'm summoned, summon a <link=card.summon><style=AssociatedCard>Rimefang Pack</style></link>. Grant it +1|+1 for each time you have <link=keyword.Frostbite><sprite name=Frostbite><style=Keyword>Frostbitten</style></link> enemies this game.<style=Variable></style>",
+    "descriptionRaw": "When I'm summoned, summon a Rimefang Pack. Grant it +1|+1 for each time you have Frostbitten enemies this game.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The rimefang wolves circled the drüvask, crouched low, wary. The stench of death clung tightly to it, pungent and overwhelming.",
+    "artistName": "Kudos Productions",
+    "name": "Rimefang Denmother",
+    "cardCode": "04FR019",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [],
     "assets": [
       {
@@ -8970,6 +10130,123 @@
     "supertype": "",
     "type": "Unit",
     "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX021.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX021-full.png"
+      }
+    ],
+    "region": "Noxus",
+    "regionRef": "Noxus",
+    "attack": 2,
+    "cost": 5,
+    "health": 6,
+    "description": "When you target me, grant me +1|+0.",
+    "descriptionRaw": "When you target me, grant me +1|+0.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "After countless battles, Beryn had vowed to never again raise his sword, even if it meant forfeiting his life. But when the strange mists swept through Noxus and overtook Thea, he knew he had to break his promise. He would free her, no matter the cost.",
+    "artistName": "Kudos Productions",
+    "name": "Retired Reckoner",
+    "cardCode": "04NX021",
+    "keywords": [
+      "Overwhelm"
+    ],
+    "keywordRefs": [
+      "Overwhelm"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04NX022T1"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX022.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX022-full.png"
+      }
+    ],
+    "region": "Noxus",
+    "regionRef": "Noxus",
+    "attack": 4,
+    "cost": 4,
+    "health": 3,
+    "description": "When I'm summoned, create a <link=card.create><style=AssociatedCard>Midnight Raid</style></link> in hand.",
+    "descriptionRaw": "When I'm summoned, create a Midnight Raid in hand.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "When her sentence ended, Thea knew she could never rejoin her people. War - and Noxus - had changed her, made her a killer. She wouldn't know peace. Instead, she put her newfound skills to use for coin in the arenas.",
+    "artistName": "Kudos Productions",
+    "name": "Ruined Reckoner",
+    "cardCode": "04NX022",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX022T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04NX022T1-full.png"
+      }
+    ],
+    "region": "Noxus",
+    "regionRef": "Noxus",
+    "attack": 0,
+    "cost": 0,
+    "health": 0,
+    "description": "An ally starts a free attack.",
+    "descriptionRaw": "An ally starts a free attack.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Kill or be killed!\" - Ruined Reckoner",
+    "artistName": "Kudos Productions",
+    "name": "Midnight Raid",
+    "cardCode": "04NX022T1",
+    "keywords": [
+      "Slow",
+      "Fleeting"
+    ],
+    "keywordRefs": [
+      "Slow",
+      "Fleeting"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": false,
     "set": "Set4"
   },
   {
@@ -9680,6 +10957,134 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [
+      "04SI055T2",
+      "04SI055T1",
+      "04SI045"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 5,
+    "cost": 5,
+    "health": 4,
+    "description": "Each round, the first time an ally dies, summon an <link=card.summon><style=AssociatedCard>Encroaching Mist</style></link>.",
+    "descriptionRaw": "Each round, the first time an ally dies, summon an Encroaching Mist.",
+    "levelupDescription": "I've seen allies with 20+ total power die.<style=Variable></style>",
+    "levelupDescriptionRaw": "I've seen allies with 20+ total power die.",
+    "flavorText": "\"There is something that deeply unsettles me about the young king. Something at his heart... a hunger that cannot be satisfied, a desire that goes unfulfilled.\" - From the record of Nunyo Necritos of Camavor",
+    "artistName": "SIXMOREVODKA",
+    "name": "Viego",
+    "cardCode": "04SI055",
+    "keywords": [
+      "Fearsome"
+    ],
+    "keywordRefs": [
+      "Fearsome"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "Champion",
+    "rarityRef": "Champion",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SI055",
+      "04SI055T2"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055T1.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055T1-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 0,
+    "cost": 4,
+    "health": 0,
+    "description": "Pick a unit to <link=vocab.Strike><style=Vocab>strike</style></link> your Nexus, then kill it.\r\nCreate a <link=card.level1><style=AssociatedCard>Viego</style></link> in your deck.",
+    "descriptionRaw": "Pick a unit to strike your Nexus, then kill it.\r\nCreate a Viego in your deck.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I have given everything to find her, and yet it is not enough.\" - Viego",
+    "artistName": "Kudos Productions",
+    "name": "Viego's Despair",
+    "cardCode": "04SI055T1",
+    "keywords": [
+      "Slow"
+    ],
+    "keywordRefs": [
+      "Slow"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Spell",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SI055",
+      "04SI055T1",
+      "04SI045"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055T2.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI055T2-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 6,
+    "cost": 5,
+    "health": 5,
+    "description": "Each round, the first time a unit dies, summon an <link=card.summon><style=AssociatedCard>Encroaching Mist</style></link>.\r\n<link=vocab.RoundStart><style=Vocab>Round Start</style></link>: Steal the <link=vocab.Strongest><style=Vocab>strongest</style></link> enemy this round. If it's a champion, kill it instead.",
+    "descriptionRaw": "Each round, the first time a unit dies, summon an Encroaching Mist.\r\nRound Start: Steal the strongest enemy this round. If it's a champion, kill it instead.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"It is obvious to me in hindsight that it was not Isolde's death that fueled Viego's delusions, nor his need for fulfillment, but simply that something he desperately wanted was denied him.\" - From the record of Nunyo Necritos of Camavor",
+    "artistName": "SIXMOREVODKA",
+    "name": "Viego",
+    "cardCode": "04SI055T2",
+    "keywords": [
+      "Fearsome"
+    ],
+    "keywordRefs": [
+      "Fearsome"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "Champion",
+    "rarityRef": "Champion",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "Champion",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [],
     "assets": [
       {
@@ -9880,6 +11285,47 @@
   {
     "associatedCards": [],
     "associatedCardRefs": [
+      "04SI055"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI045.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI045-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 1,
+    "cost": 1,
+    "health": 1,
+    "description": "When I'm summoned, grant all allied <link=card.viego><style=AssociatedCard>Viegos</style></link> and other <link=card.mist><style=AssociatedCard>Encroaching Mists</style></link> <link=vocab.Everywhere><style=Vocab>everywhere</style></link> +1|+1.",
+    "descriptionRaw": "When I'm summoned, grant all allied Viegos and other Encroaching Mists everywhere +1|+1.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Each living creature that beholds the Black Mist sees something unique in it, their own fears manifested and realized in vague, roiling forms. ",
+    "artistName": "Kudos Productions",
+    "name": "Encroaching Mist",
+    "cardCode": "04SI045",
+    "keywords": [
+      "Ephemeral"
+    ],
+    "keywordRefs": [
+      "Ephemeral"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "None",
+    "rarityRef": "None",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
       "04SI004T2",
       "04SI004T1",
       "04SI014"
@@ -10029,6 +11475,43 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [
+      "04SI045"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI054.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI054-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 3,
+    "cost": 3,
+    "health": 3,
+    "description": "When I'm summoned, summon an <link=card.summon><style=AssociatedCard>Encroaching Mist</style></link>.",
+    "descriptionRaw": "When I'm summoned, summon an Encroaching Mist.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The soldiers of Camavor marched with Viego in life, then again in death, their loyalty unwavering.",
+    "artistName": "Kudos Productions",
+    "name": "Camavoran Soldier",
+    "cardCode": "04SI054",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [],
     "assets": [
       {
@@ -10059,6 +11542,45 @@
     "spellSpeedRef": "Slow",
     "rarity": "EPIC",
     "rarityRef": "Epic",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI056.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI056-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 0,
+    "cost": 5,
+    "health": 0,
+    "description": "<link=keyword.Drain><style=Keyword>Drain</style></link> 2 from 2 enemies.\r\n",
+    "descriptionRaw": "Drain 2 from 2 enemies.\r\n",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I will take what I want, and dispense with what I don't.\" - Viego",
+    "artistName": "Kudos Productions",
+    "name": "Withering Mist",
+    "cardCode": "04SI056",
+    "keywords": [
+      "Slow"
+    ],
+    "keywordRefs": [
+      "Slow"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
     "subtype": "",
     "subtypes": [],
     "supertype": "",
@@ -10104,6 +11626,45 @@
     "subtypes": [],
     "supertype": "",
     "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI029.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI029-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 0,
+    "cost": 4,
+    "health": 0,
+    "description": "Pick a unit to <link=vocab.Strike><style=Vocab>strike</style></link> your Nexus, then kill it.",
+    "descriptionRaw": "Pick a unit to strike your Nexus, then kill it.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"I have given everything to find her, and yet it is not enough.\" - Viego",
+    "artistName": "Kudos Productions",
+    "name": "Despair",
+    "cardCode": "04SI029",
+    "keywords": [
+      "Slow"
+    ],
+    "keywordRefs": [
+      "Slow"
+    ],
+    "spellSpeed": "Slow",
+    "spellSpeedRef": "Slow",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Spell",
     "collectible": true,
     "set": "Set4"
   },
@@ -10266,6 +11827,47 @@
     "associatedCardRefs": [],
     "assets": [
       {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI021.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI021-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 3,
+    "cost": 2,
+    "health": 2,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: I <link=vocab.Strike><style=Vocab>strike</style></link> an ally or deal 3 to your Nexus.",
+    "descriptionRaw": "Play: I strike an ally or deal 3 to your Nexus.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "At first, the Demacian soldiers thought they heard dozens of claws skittering across the square's tile. It wasn't until it breached the watchtower that they realized those many limbs belonged to a single creature.",
+    "artistName": "Kudos Productions",
+    "name": "Crawling Viperwyrm",
+    "cardCode": "04SI021",
+    "keywords": [
+      "Fury"
+    ],
+    "keywordRefs": [
+      "Fury"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [
+      "DRAGON"
+    ],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
         "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI002.png",
         "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI002-full.png"
       }
@@ -10297,6 +11899,47 @@
     "subtypes": [],
     "supertype": "",
     "type": "Spell",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [
+      "04SI045"
+    ],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI053.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI053-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 7,
+    "cost": 7,
+    "health": 6,
+    "description": "When I'm summoned or <link=vocab.RoundStart><style=Vocab>Round Start</style></link>: Summon an <link=card.summon><style=AssociatedCard>Encroaching Mist</style></link>.",
+    "descriptionRaw": "When I'm summoned or Round Start: Summon an Encroaching Mist.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Maokai worked tirelessly work to cultivate life in the Shadow Isles. The Mist's ambivalence makes its ironies no less cruel.",
+    "artistName": "Kudos Productions",
+    "name": "Invasive Hydravine",
+    "cardCode": "04SI053",
+    "keywords": [
+      "Fearsome"
+    ],
+    "keywordRefs": [
+      "Fearsome"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "EPIC",
+    "rarityRef": "Epic",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
     "collectible": true,
     "set": "Set4"
   },
@@ -10370,6 +12013,49 @@
     "supertype": "",
     "type": "Unit",
     "collectible": false,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI028.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04SI028-full.png"
+      }
+    ],
+    "region": "Shadow Isles",
+    "regionRef": "ShadowIsles",
+    "attack": 4,
+    "cost": 4,
+    "health": 3,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: I <link=vocab.Strike><style=Vocab>strike</style></link> an ally or deal 3 to your Nexus.\r\n When I <link=vocab.Slay><style=Vocab>slay</style></link> a unit, <link=keyword.Drain><style=Keyword>drain</style></link> 1 from the enemy Nexus.",
+    "descriptionRaw": "Play: I strike an ally or deal 3 to your Nexus.\r\n When I slay a unit, drain 1 from the enemy Nexus.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "For centuries, the Black Mist has sought out creatures all over the world, twisting and warping them; turning them into nightmarish versions of their past selves.",
+    "artistName": "Kudos Productions",
+    "name": "Camavoran Dragon",
+    "cardCode": "04SI028",
+    "keywords": [
+      "Fury",
+      "Fearsome"
+    ],
+    "keywordRefs": [
+      "Fury",
+      "Fearsome"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [
+      "DRAGON"
+    ],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
     "set": "Set4"
   },
   {
@@ -10777,6 +12463,41 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04MT018.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04MT018-full.png"
+      }
+    ],
+    "region": "Targon",
+    "regionRef": "Targon",
+    "attack": 1,
+    "cost": 1,
+    "health": 2,
+    "description": "When I'm supported, give me and my supporting ally +1|+1 this round.",
+    "descriptionRaw": "When I'm supported, give me and my supporting ally +1|+1 this round.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "\"Don't be afraid of the howling gale\nAs it blows 'cross the mountain and through the dale\nNever you worry, you have nothing to fear\nMy darling, rest, mother is near.\" - Targonian lullaby",
+    "artistName": "Kudos Productions",
+    "name": "Frightened Ibex",
+    "cardCode": "04MT018",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [
       "04MT004T1"
     ],
@@ -11179,8 +12900,8 @@
     "attack": 0,
     "cost": 1,
     "health": 0,
-    "description": "<link=keyword.Daybreak><style=Keyword>Daybreak</style></link>: Create a random non-champion <link=keyword.Nightfall><style=Keyword>Nightfall</style></link> card in hand.\r\n<link=keyword.Nightfall><style=Keyword>Nightfall</style></link>: Create a random non-champion <link=keyword.Daybreak><style=Keyword>Daybreak</style></link> card in hand.",
-    "descriptionRaw": "Daybreak: Create a random non-champion Nightfall card in hand.\r\nNightfall: Create a random non-champion Daybreak card in hand.",
+    "description": "<link=keyword.Daybreak><style=Keyword>Daybreak</style></link>: Create a random <link=keyword.Nightfall><style=Keyword>Nightfall</style></link> card in hand.\r\n<link=keyword.Nightfall><style=Keyword>Nightfall</style></link>: Create a random <link=keyword.Daybreak><style=Keyword>Daybreak</style></link> card in hand.",
+    "descriptionRaw": "Daybreak: Create a random Nightfall card in hand.\r\nNightfall: Create a random Daybreak card in hand.",
     "levelupDescription": "",
     "levelupDescriptionRaw": "",
     "flavorText": "So goes the cycle of night and day, one always following the other.",
@@ -11604,7 +13325,6 @@
   {
     "associatedCards": [],
     "associatedCardRefs": [
-      "04DE008",
       "04DE008"
     ],
     "assets": [
@@ -11686,6 +13406,41 @@
   },
   {
     "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04DE020.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04DE020-full.png"
+      }
+    ],
+    "region": "Demacia",
+    "regionRef": "Demacia",
+    "attack": 2,
+    "cost": 3,
+    "health": 4,
+    "description": "When an ally with <link=keyword.Fury><sprite name=Fury><style=Keyword>Fury</style></link> kills a unit, grant it an additional +1|+1.",
+    "descriptionRaw": "When an ally with Fury kills a unit, grant it an additional +1|+1.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "The Mist warped Gregem's mind, forcing him to relive Wrenwall, over and over. Stoked by long-buried bitterness and rage, he turned against the comrades who once stood with him.",
+    "artistName": "Kudos Productions",
+    "name": "Ruined Dragonguard",
+    "cardCode": "04DE020",
+    "keywords": [],
+    "keywordRefs": [],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "COMMON",
+    "rarityRef": "Common",
+    "subtype": "",
+    "subtypes": [],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
     "associatedCardRefs": [
       "04DE008"
     ],
@@ -11721,6 +13476,47 @@
     "subtype": "ELITE",
     "subtypes": [
       "ELITE"
+    ],
+    "supertype": "",
+    "type": "Unit",
+    "collectible": true,
+    "set": "Set4"
+  },
+  {
+    "associatedCards": [],
+    "associatedCardRefs": [],
+    "assets": [
+      {
+        "gameAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04DE016.png",
+        "fullAbsolutePath": "http://dd.b.pvp.net/2_12_0/set4/en_us/img/cards/04DE016-full.png"
+      }
+    ],
+    "region": "Demacia",
+    "regionRef": "Demacia",
+    "attack": 6,
+    "cost": 6,
+    "health": 6,
+    "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Grant an allied Champion or Dragon <link=keyword.Challenger><sprite name=Challenger><style=Keyword>Challenger</style></link>.",
+    "descriptionRaw": "Play: Grant an allied Champion or Dragon Challenger.",
+    "levelupDescription": "",
+    "levelupDescriptionRaw": "",
+    "flavorText": "Kadregrin sowed chaos and fear long before the Black Mist reached Demacia. Under Viego's command, however, his skills would bolster all of the Ruined King's forces.",
+    "artistName": "Kudos Productions",
+    "name": "Kadregrin the Ruined",
+    "cardCode": "04DE016",
+    "keywords": [
+      "Fury"
+    ],
+    "keywordRefs": [
+      "Fury"
+    ],
+    "spellSpeed": "",
+    "spellSpeedRef": "",
+    "rarity": "RARE",
+    "rarityRef": "Rare",
+    "subtype": "",
+    "subtypes": [
+      "DRAGON"
     ],
     "supertype": "",
     "type": "Unit",
