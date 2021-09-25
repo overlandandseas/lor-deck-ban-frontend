@@ -1,5 +1,9 @@
 # Changelog
 
+## 9/25/2021
+- Added support for multiregion cards
+- Added Bandle City Support
+
 ## 7/16/2021
 - Updated Viego/Akshan sets
 

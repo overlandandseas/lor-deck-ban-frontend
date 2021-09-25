@@ -11,7 +11,9 @@
             <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-right" alt="{{card.name}}"/>
           {{/if}}
                 <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-          <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+          <div class="ml3">
+            {{#each card.regionRefs as |region|}}<img class="" src="/images/{{region}}.png" width="32px" height="auto" alt={{region}}/>{{/each}}
+          </div>
         </li>
         {{/each}}
       </ul>
@@ -27,7 +29,9 @@
             <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-right" alt="{{card.name}}"/>
           {{/if}}
                 <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-          <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+          <div class="ml3">
+            {{#each card.regionRefs as |region|}}<img class="" src="/images/{{region}}.png" width="32px" height="auto" alt={{region}}/>{{/each}}
+          </div>
         </li>
         {{/each}}
       </ul>
@@ -43,8 +47,10 @@
       {{#if card.visible}}
         <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-left" alt="{{card.name}}"/>
       {{/if}}
-            <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto"  alt={{card.region}}/>
+        <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
+        <div class="ml3">
+          {{#each card.regionRefs as |region|}}<img class="" src="/images/{{region}}.png" width="32px" height="auto" alt={{region}}/>{{/each}}
+        </div>
     </li>
     {{/each}}
   </ul>
@@ -60,7 +66,9 @@
         <img src="{{get (get card.assets 0) 'gameAbsolutePath'}}" class="z-999 db-l dn absolute w5 fl push-left" alt="{{card.name}}"/>
       {{/if}}
             <span class="db"><span class="code white-50">({{card.cost}})</span> {{card.name}} <span class="white-50 i">x{{card.count}}</span></span>
-      <img class="db ml3" src="/images/{{card.regionRef}}.png" width="32px" height="auto" alt={{card.region}}/>
+          <div class="ml3">
+            {{#each card.regionRefs as |region|}}<img class="" src="/images/{{region}}.png" width="32px" height="auto" alt={{region}}/>{{/each}}
+          </div>
     </li>
     {{/each}}
   </ul>

@@ -95,11 +95,27 @@
   color: rgba(160, 82, 79, 1);
 }
 
+.b--Noxus {
+  border-color: rgba(192, 211, 34, 1);
+}
+
+.Noxus {
+  color: rgba(192, 211, 34, 1);
+}
+
 .bg-ShadowIsles {
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(59, 150, 111, 0.25) 100%
+  );
+}
+
+.bg-BandleCity {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(192, 211, 34, 0.25) 100%
   );
 }
 
