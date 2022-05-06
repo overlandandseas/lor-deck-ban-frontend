@@ -1,5 +1,8 @@
 # Changelog
 
+## 5/6/2022
+- Deprecating
+
 ## 9/25/2021
 - Added support for multiregion cards
 - Added Bandle City Support

@@ -1,4 +1,20 @@
-<p class="code f4 fw3 mv3">Create Room</p>
+<label class="db mt3 mb1 code">Deck Code</label>
+<div class="flex items-center">
+  <Input
+    @type="text"
+    @value={{this.pastedDeckCode}}
+    class="code db pa3 w-100 ba white-80 b--black-50 bg-black-30"
+    {{on "input" this.verifyDeckCode}}
+    {{on "change" this.transitionUrl }}
+    placeholder="Paste deckcode.."/>
+</div>
+{{#if this.isValidDeckCode}}
+  <DeckList @deck={{this.spotlightDeck}}/>
+{{/if}}
+<p class="{{if (eq this.isValidDeckCode false) 'o-100' 'o-0' }} mt3 mb0 red code">Please enter a valid deck code</p>
+
+
+{{!-- <p class="code f4 fw3 mv3">Create Room</p>
 <table class="code">
   <tbody>
   <tr>
@@ -38,3 +54,4 @@
   class="code mv3 br-pill f5 dib ba b--white-20 white-80 bg-dark-mode ph4 pv3 no-underline pointer dim">
   Create new room
 </button>
+ --}}

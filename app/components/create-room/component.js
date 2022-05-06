@@ -3,6 +3,8 @@ import { action } from '@ember/object';
 import { inject } from '@ember/service';
 import config from 'lor-card-ban-frontend/config/environment';
 import { tracked } from '@glimmer/tracking';
+import Deck from 'lor-card-ban-frontend/utils/Deck';
+
 
 export default class CreateRoom extends Component {
 
@@ -10,11 +12,51 @@ export default class CreateRoom extends Component {
 
   @inject user;
 
+  @inject savedDecks;
+
+  @tracked spotlightDeck;
+
   @tracked numberOfDecks = 3;
 
   @tracked numberOfBans = 1;
 
   @tracked banOptions = [1, 2];
+
+  @tracked isValidDeckCode;
+  @tracked pastedDeckCode;
+
+  constructor() {
+    super(...arguments);
+
+    if (this.args.urlDeckCode) {
+      this.verifyDeckCode({
+        target: {
+          value: this.args.urlDeckCode
+        }
+      })
+      this.pastedDeckCode = this.args.urlDeckCode;
+    }
+  }
+
+  @action
+  verifyDeckCode({ target }) {
+
+    const deckCode = target.value;
+
+    try {
+      const deck = new Deck(deckCode);
+      this.spotlightDeck = deck;
+      this.isValidDeckCode = true;
+      this.deckName = `${this.spotlightDeck.regions.join(' / ')} Deck`
+    } catch(ex) {
+      this.isValidDeckCode = false;
+    }
+  }
+
+  @action
+  saveDeck() {
+    this.savedDecks.saveDeck(this.spotlightDeck, this.deckName);
+  }
 
   @action
   onNumberOfDecksChange(evt) {
@@ -26,6 +68,11 @@ export default class CreateRoom extends Component {
     this.numberOfDecks = evt.target.value;
     this.banOptions = options;
     this.numberOfBans = 1;
+  }
+
+  @action
+  transitionUrl() {
+    this.router.transitionTo('home', this.pastedDeckCode)
   }
 
   @action

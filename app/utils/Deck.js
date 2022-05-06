@@ -44,6 +44,7 @@ export default class Deck {
     this.decodedDeck.forEach(card => {
       const cardObj = Object.assign({}, DATA_MAP[card.code]);
       set(cardObj, 'count', card.count);
+      cardObj.regionRef = cardObj.regionRefs[0];
       this.cards.push(cardObj);
 
       // Region

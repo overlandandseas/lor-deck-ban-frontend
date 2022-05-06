@@ -7,8 +7,15 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+
   this.route('room', {path: 'r/:room_name'});
   this.route('about');
   this.route('updates');
   this.route('test');
+  this.route('home', {
+    path: '/:deck_code'
+  });
+  this.route('index', {
+    path: '/'
+  });
 });
